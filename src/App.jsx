@@ -6,6 +6,7 @@ import Brands from './Components/Brands'
 import Navbar from './Components/Navbar'
 import Maruti from './Pages/Cars/Maruti'
 import BMW from './Pages/Cars/BMW'
+import Toyota from './Pages/Cars/Toyota'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path='/Maruti' element={<Maruti/>}/>
       <Route path='/brands' element={<Brands/>}/>
       <Route path='/bmw' element={<BMW/>}/>
+     <Route path='/toyota' element={<Toyota/>}/>
     </Routes>
     
    </div>
