@@ -8,6 +8,8 @@ import Maruti from './Pages/Cars/Maruti'
 import BMW from './Pages/Cars/BMW'
 import Toyota from './Pages/Cars/Toyota'
 import Login from './Components/Login';
+import About from './Components/About';
+import Home from './Components/Home';
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
       <Route path='/bmw' element={<BMW/>}/>
      <Route path='/toyota' element={<Toyota/>}/>
      <Route path='/login' element={<Login/>}/>
+     <Route path='/about' element={<About/>}/>
+     <Route path='/home' element={<Home/>}/>
      
     </Routes>
     
