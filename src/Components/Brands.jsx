@@ -11,7 +11,9 @@ export default function Brands() {
                 <Cards image={H1} title={"Maruti Suzuki"} />
                 </Link>
                 <Cards image={H1} title={"Hyundai"} />
+                <Link to={"/MahindraThar"}>
                 <Cards image={H1} title={"Mahindra"} />
+                </Link>
                     <Cards image={H1} title={"Toyota"} />
             </div>
             <div className='flex flex-row'>
