@@ -46,7 +46,7 @@ export default function Brands() {
                 <Cards image={Mercedes} title={"Mercedes"} />
             </div>
             <div className='flex flex-row'>
-                <Cards image={LandRover} title={"Land Rover"} />
+                <Cards image={LandRover} title={"LandRover"} />
                 <Cards image={Porsche} title={"Porsche"} />
 
                 <Cards image={Ford} title={"Ford"} />
