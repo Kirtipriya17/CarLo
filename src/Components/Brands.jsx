@@ -20,6 +20,7 @@ import Ford from "../assets/Brands/Ford.jpg"
 import  Jeep from "../assets/Brands/Jeep.jpg"
 import  Hondx from "../assets/Brands/Hondx.jpg"
 
+
 export default function Brands() {
     return (
         <div>
@@ -51,6 +52,14 @@ export default function Brands() {
 
                 <Cards image={Ford} title={"Ford"} />
                 <Cards image={Jeep} title={"Jeep"} />
+                
+            </div>
+
+            <div className='flex flex-row'>
+            <Cards title={"kia"} />
+            <Cards title={"Rousroyce"} />
+            <Cards title={"lamborgini"} />
+            <Cards title={"Volvo"} />
             </div>
         </div>
     )
