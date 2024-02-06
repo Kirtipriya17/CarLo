@@ -1,13 +1,12 @@
 import React from 'react'
 
-export default function Cards({image,title}) {
+export default function Card({title,image}) {
   return (
-    <div className='backdrop-blur shadow-gray--500 shadow-lg rounded-xl
-    bg-gray-200  p-5 bg-opacity-30'>
-        <img src={image} alt="" />
-        {title}
-        
+    <div className='backdrop-blur shadow-blue-500 shadow-lg rounded-xl
+    bg-green-200 p-5 bg-opacity-30'>
+
+    <img src={image} alt="" />
+   {title}
     </div>
-    
   )
 }
