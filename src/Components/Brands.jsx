@@ -1,6 +1,5 @@
 import React from 'react'
 import Cards from './Cards'
-import H1 from "../assets/1.jpg"
 import { Link } from 'react-router-dom'
 
 import BMW from "../assets/Brands/BMW.jpg"
@@ -28,17 +27,30 @@ export default function Brands() {
                 <Link to={"/Maruti"}>
                 <Cards image={Maruti} title={"Maruti suzuki"} />
                 </Link>
+                <Link to={"/bmw"}>
                 <Cards image={Hyundai} title={"Hyundai"} />
+                </Link>
+               
+                <Link to={"/MahindraThar"}>
                 <Cards image={Mahindra} title={"Mahindra"} />
+                </Link>
+                <Link to={"/bmw"}>
                     <Cards image={Toyota} title={"Toyota"} />
+                </Link>
             </div>
             <div className='flex flex-row'>
+                <Link to={"/bmw"}>
                 <Cards image={Honda} title={"Honda"} />
+                </Link>
                 <Link to={"/bmw"}>
                 <Cards image={BMW} title={"BMW"}  />
                 </Link>
+                <Link to={"/bmw"}>
                 <Cards image={Tata} title={"Tata"} />
+                </Link>
+                <Link to={"/bmw"}>
                 <Cards image={Hondx} title={"Hondx"} />
+                </Link>
             </div>
             <div className='flex flex-row'>
                 <Cards image={Jaguar} title={"Jaguar"} />
@@ -56,7 +68,7 @@ export default function Brands() {
             </div>
 
             <div className='flex flex-row'>
-            <Cards title={"kia"} />
+            <Cards image={Ford} title={"kia"} />
             <Cards title={"Rousroyce"} />
             <Cards title={"lamborgini"} />
             <Cards title={"Volvo"} />
