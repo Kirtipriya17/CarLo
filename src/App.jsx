@@ -11,10 +11,12 @@ import Login from './Components/Login';
 import About from './Components/About';
 import Home from './Components/Home';
 import MahindraThar from './Pages/Cars/Mahindra Thar';
+import BookingPage from './Components/BookingPage';
 
 export default function App() {
   return (
    <div>
+    
     <Navbar/>
     
     <Routes>
@@ -26,6 +28,7 @@ export default function App() {
      <Route path='/login' element={<Login/>}/>
      <Route path='/about' element={<About/>}/>
      <Route path='/home' element={<Home/>}/>
+     <Route path='/Bookingpage' element={<BookingPage/>}/>
      
     </Routes>
     

@@ -42,6 +42,14 @@ export default function Slider() {
           <Cards title={"hh"}  />
           <Cards title={"ggg"}/>
         </div>
+        <section>
+          <h2>Services</h2>
+          <ul>
+            <li>Wide range of car options</li>
+            <li>Flexible booking dates</li>
+            <li>Excellent customer service</li>
+          </ul>
+        </section>
 
       </div></>
 
