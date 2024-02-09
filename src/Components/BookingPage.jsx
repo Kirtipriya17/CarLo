@@ -46,9 +46,9 @@ const BookingPage = () => {
   };
 
   return (
-    <div>
+    <div className='flex justify-center self-center h-[100vh] items-center bg-slate-400'>
       <h1>Car Booking</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} action=""className='flex flex-col'>
         <label>
           Select Car:
           <select value={selectedCar} onChange={(e) => handleCarSelection(e.target.value)}>
