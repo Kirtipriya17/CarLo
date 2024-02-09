@@ -14,7 +14,7 @@ import MahindraThar from './Pages/Cars/Mahindra Thar';
 
 export default function App() {
   return (
-   <div>
+   <div  className='bg-red-900'>
     <Navbar/>
     
     <Routes>
