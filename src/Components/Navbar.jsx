@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -54,4 +52,3 @@ export default function  Navbar(){
     
   )
 }
->>>>>>> 74ed4823055c18cbed2e1bae8bf60a034389ed0f

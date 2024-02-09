@@ -14,15 +14,11 @@ import MahindraThar from './Pages/Cars/Mahindra Thar';
 
 export default function App() {
   return (
-<<<<<<< HEAD
-   <div>
-=======
 
 
    <div>
     
 
->>>>>>> 74ed4823055c18cbed2e1bae8bf60a034389ed0f
     <Navbar/>
     
     <Routes>
