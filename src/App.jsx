@@ -16,12 +16,11 @@ import BookingPage from './Components/BookingPage';
 
 export default function App() {
   return (
-<<<<<<< HEAD
-   <div  className='bg-red-900'>
-=======
+
+
    <div>
     
->>>>>>> 13355bd50d2aaa08a41eff4b9bc0eb5e500179a5
+
     <Navbar/>
     
     <Routes>
