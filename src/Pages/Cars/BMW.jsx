@@ -7,6 +7,7 @@ import H3 from '../../assets/3.jpg'
 export default function BMW() {
   return (
     <div>
+      
         <Props pic1={H1} pic2={H2} pic3={H3} Car={"BMW"} Price={"Rs 100000"} />
     </div>
   )

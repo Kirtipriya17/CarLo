@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-export default function Slider({ pic1, pic2, pic3, Car, Price, Engine, Power, Torque, Seat, Drive, Mileage, Feature}) {
+export default function Props({ pic1, pic2, pic3, Car, Price, Engine, Power, Torque, Seat, Drive, Mileage, Feature}) {
+ 
+  const [showText, setShowText] = useState(false);
+ 
+ 
   return (
-    <div>
+    <div className='ml-[100px] mr-[50px]' >
 
-      <div className='flex flex-row'>
-        <Carousel className='rounded-xl w-[200px] max-h-[80vh]  ' autoPlay infiniteLoop interval={1000} stopOnHover={false} showThumbs={false}
+      <div className='flex flex-row '>
+        <Carousel className='w-[200px] h-[200px] overflow-hidden rounded-xl  max-h-[80vh]  ' autoPlay infiniteLoop interval={1000} stopOnHover={false} showThumbs={false}
           showArrows={false} showStatus={false} >
           <div>
             <img src={pic1} alt='pic1' />
@@ -26,12 +30,16 @@ export default function Slider({ pic1, pic2, pic3, Car, Price, Engine, Power, To
       </div>
 
 
-      <div>
-        <h3 className='font-bold'>Key Specifications & Features of {Car}</h3>
+      <div className='m-10'>
+
+        <h3 className='font-bold '>Key Specifications & Features of {Car}</h3>
         <div >
-          <h1  className='font-bold'>
+      <button onClick={() => setShowText(!showText)}>
+          <h1  className='font-bold '>
             Key Specifications
           </h1>
+      </button>
+      {showText && <div>
           <p className='flex flex-row'> <svg height="20px" width="30px"
             viewBox="0 0 511.999 511.999" >
             <g>
@@ -60,8 +68,9 @@ export default function Slider({ pic1, pic2, pic3, Car, Price, Engine, Power, To
 
           <p className='flex flex-row'> <svg width="30px" height="20px" viewBox="0 0 1024 1024" ><path fill="#000000" d="M512 896a384 384 0 1 0 0-768 384 384 0 0 0 0 768zm0 64a448 448 0 1 1 0-896 448 448 0 0 1 0 896z" /><path fill="#000000" d="M192 512a320 320 0 1 1 640 0 32 32 0 1 1-64 0 256 256 0 1 0-512 0 32 32 0 0 1-64 0z" /><path fill="#000000" d="M570.432 627.84A96 96 0 1 1 509.568 608l60.992-187.776A32 32 0 1 1 631.424 440l-60.992 187.776zM502.08 734.464a32 32 0 1 0 19.84-60.928 32 32 0 0 0-19.84 60.928z" /></svg>
             Mileage {Mileage} </p>
-        </div>
+        </div>}
 
+</div>
         <div>
           <h1  className='font-bold'>Top Features</h1> {Feature}
         </div>
@@ -82,6 +91,18 @@ export default function Slider({ pic1, pic2, pic3, Car, Price, Engine, Power, To
         Max Torque (nm@rpm) <br />
 
       </div> */}
+          <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2020 Company Name
+                        - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
   )
 }
