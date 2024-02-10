@@ -9,7 +9,9 @@ import Toyota from './Pages/Brand/Toyota'
 import Login from './Components/Login';
 import About from './Components/About';
 import Home from './Components/Home';
-import MahindraThar from './Pages/Brand/Mahindra Thar';
+import Cars from './Components/Cars';
+import MahindraThar from './Pages/Mahindra/Mahindra Thar';
+import Mahindra from './Pages/Brand/Mahindra';
 
 export default function App() {
   return (
@@ -25,10 +27,13 @@ export default function App() {
       <Route path='/brands' element={<Brands/>}/>
       <Route path='/bmw' element={<BMW/>}/>
      <Route path='/toyota' element={<Toyota/>}/>
+     <Route path='/Mahindra' element={<Mahindra/>}/>
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
      <Route path='/login' element={<Login/>}/>
      <Route path='/about' element={<About/>}/>
      <Route path='/home' element={<Home/>}/>
+     <Route path='/Car' element={<Cars/>}/>
+     
      
     </Routes>
     

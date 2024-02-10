@@ -31,13 +31,13 @@ export default function Brands() {
                 <Cards image={Hyundai} title={"Hyundai"} />
                 </Link>
                
-                <Link to={"/MahindraThar"}>
+                <Link to={"/Mahindra"}>
                 <Cards image={Mahindra} title={"Mahindra"} />
                 </Link>
                 <Link to={"/bmw"}>
                     <Cards image={Toyota} title={"Toyota"} />
                 </Link>
-            </div>
+            </div><br /><br />
             <div className='flex flex-row'>
                 <Link to={"/bmw"}>
                 <Cards image={Honda} title={"Honda"} />
@@ -51,7 +51,7 @@ export default function Brands() {
                 <Link to={"/bmw"}>
                 <Cards image={Hondx} title={"Hondx"} />
                 </Link>
-            </div>
+            </div><br /><br />
             <div className='flex flex-row'>
                 <Cards image={Jaguar} title={"Jaguar"} />
                 <Cards image={Audi} title={"Audi"} />
@@ -65,7 +65,7 @@ export default function Brands() {
                 <Cards image={Ford} title={"Ford"} />
                 <Cards image={Jeep} title={"Jeep"} />
                 
-            </div>
+            </div><br /><br />
 
             <div className='flex flex-row'>
             <Cards image={Ford} title={"kia"} />
