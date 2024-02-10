@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-export default function Props({ pic1, pic2, pic3, Car, Price, Engine, Power, Torque, Seat, Drive, Mileage, Feature}) {
+export default function Props({ pic1, pic2, pic3, Car, Price,about,F1,F2,F3,T,Mileage,FuelType,EngineDisplacement,Cylinder,Seat,FuelCapacity,MaxPower,MaxTorque,TransmissionType,BodyType,GroundClearanceUnladen})
+// Engine, Power, Torque, Seat, Drive, Mileage, Feature
+ {
  
   const [showText, setShowText] = useState(false);
  
@@ -30,7 +32,21 @@ export default function Props({ pic1, pic2, pic3, Car, Price, Engine, Power, Tor
       </div>
 
 
-      <div className='m-10'>
+<div>
+ <p> {Car} </p>
+ <h1>{about}</h1>
+</div>
+
+<div><br />
+  <p>Standout Features of {Car}</p>
+  <div className='flex flex-row'>
+    {F1}
+    {F2}
+    {F3} 
+  </div>
+</div>
+
+      {/* <div className='m-10'>
 
         <h3 className='font-bold '>Key Specifications & Features of {Car}</h3>
         <div >
@@ -74,35 +90,35 @@ export default function Props({ pic1, pic2, pic3, Car, Price, Engine, Power, Tor
         <div>
           <h1  className='font-bold'>Top Features</h1> {Feature}
         </div>
-      </div>
+      </div> */}
 
-      {/* <div>
-        <h5>Specification of {Car}</h5><br />
+      <div><br />
+        <h5>Specification of {Car}</h5>
         City Mileage {Mileage} <br />
         Fuel Type  {FuelType} <br />
-        Engine Displacement (cc) <br />
+        Engine Displacement {EngineDisplacement} <br />
         No. of Cylinders {Cylinder} <br />
         Seating Capacity {Seat} <br />
         Body Type {BodyType} <br />
-        Fuel Tank Capacity (Litres) {FuelCapacity} <br />
-        Ground Clearance Unladen (mm) <br />
-        Transmission Type <br />
-        Max Power (bhp@rpm) <br />
-        Max Torque (nm@rpm) <br />
+        Fuel Tank Capacity  {FuelCapacity} <br />
+        Transmission Type {TransmissionType} <br />
+        Max Power {MaxPower} <br />
+        Max Torque {MaxTorque} <br />
+        Ground Clearance Unladen {GroundClearanceUnladen} <br />
 
-      </div> */}
-          <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        Copyright © 2020 Company Name
-                        - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+      </div>
+         
+         <div><br />
+          <h1>Features of {Car}</h1> <br />
+          Power Steering 
+          Power Windows Front 
+          Anti Lock Braking System 
+          Air Conditioner 
+          Driver Airbag 
+          Passenger Airbag 
+          Alloy Wheels 
+Multi-function Steering Wheel
+         </div>
     </div>
   )
 }
