@@ -6,7 +6,7 @@ import './Login.css';
 export default function () {
   return (
     <div>
-    <div className='wrapper'>
+    <div className='wrapper '>
     <from action="">
         <h1 className='font-bold text-xl m-2'>Login</h1>
         <div className='input-box'>
