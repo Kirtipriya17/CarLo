@@ -54,6 +54,7 @@ export default function Brands() {
                 </Link>
                 <Link to={"/bmw"}>
                     <Cards image={Tata} title={"Tata"} />
+                    </Link>
                     <Cards image={Hondx} title={"Hondx"} />
             </div>
             <div className='flex flex-row'>
