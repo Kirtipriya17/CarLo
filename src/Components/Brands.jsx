@@ -13,12 +13,19 @@ import Audi from "../assets/Brands/Audi.jpg"
 import Porsche from "../assets/Brands/Porsche.jpg"
 import Mercedes from "../assets/Brands/Mercedes.jpg"
 import Tesla from "../assets/Brands/tesla.jpg"
-import LandRover from "../assets/Brands/Land Rover.jpg"
+import LandRover from "../assets/Brands/LandRover.jpg"
 import Hyundai from "../assets/Brands/Hyundai.jpg"
 import Mahindra from "../assets/Brands/Mahindra.jpg"
 import Ford from "../assets/Brands/Ford.jpg"
 import  Jeep from "../assets/Brands/Jeep.jpg"
-import  Hondx from "../assets/Brands/Hondx.jpg"
+
+import Kia from "../assets/Brands/Kia.jpg"
+import Lamborghini from "../assets/Brands/Lamborghini.jpg"
+import RollsRoyce from "../assets/Brands/RollsRoyce.jpg"
+import Volvo from "../assets/Brands/Volvo.jpg"
+import Ferrari from "../assets/Brands/Ferrari.jpg"
+
+
 
 
 export default function Brands() {
@@ -38,7 +45,7 @@ export default function Brands() {
                 <Cards image={BMW} title={"BMW"}  />
                 </Link>
                 <Cards image={Tata} title={"Tata"} />
-                <Cards image={Hondx} title={"Hondx"} />
+                <Cards image={Ferrari} title={"Ferrari"} />
             </div>
             <div className='flex flex-row'>
                 <Cards image={Jaguar} title={"Jaguar"} />
@@ -56,10 +63,10 @@ export default function Brands() {
             </div>
 
             <div className='flex flex-row'>
-            <Cards title={"kia"} />
-            <Cards title={"Rousroyce"} />
-            <Cards title={"lamborgini"} />
-            <Cards title={"Volvo"} />
+            <Cards image={Kia} title={"kia"} />
+            <Cards image={RollsRoyce} title={"RollsRoyce"} />
+            <Cards image={Lamborghini} title={"Lamborghini"} />
+            <Cards image={Volvo} title={"Volvo"} />
             </div>
         </div>
     )
