@@ -1,21 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Card({title,image,}) {
+export default function Card({title,image,link}) {
   return (
-    <div>
-      
-    <div className='backdrop-blur shadow-gray-900 shadow-2xl rounded-xl w-[254px] h-[180px]  
-    bg-gray-200 p-5  bg-opacity-30'>
-
-    <img src={image} alt="" />
-   {title}
+    <Link to={link} className="max-w-sm rounded-lg overflow-hidden shadow-2xl bg-white bg-opacity-10 border border-gray-200 hover:border-gray-300 transition duration-300 ease-in-out transform hover:scale-105 ml-2 p-1 w-[350px] ">
+    <div className=" h-[200px] overflow-hidden">
+      <img className="object-cover w-full h-full" src={image} alt="Card" />
     </div>
-    
-   {/* <div className='w-[254px] h-[180px]  bg-[#212121] rounded-xl shadow-lg  shadow-gray-900' >
-<img src={p1} alt="" />
-   </div> */}
-
-   {/* [15px_15px_30px_rgb(25,25,25),-15px_-15px_30px_rgb(60, 60,60)] */}
+    <div className="px-6 py-4">
+      <div className="font-bold text-xl mb-2">{title}</div>
     </div>
+  </Link>
   )
 }

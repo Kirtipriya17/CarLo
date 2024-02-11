@@ -30,6 +30,30 @@ import Ferrari from "../assets/Brands/Ferrari.jpg"
 export default function Brands() {
     return (
         <div>
+            <div className="container mx-auto">
+      <div className="grid grid-cols-4 gap-3">
+        <Cards
+          title="Card 1"
+         image={BMW}
+          link="/BMW"
+        />
+        <Cards
+          title="Card 2"
+          image={Maruti}
+          link="/Maruti"
+        />
+        <Cards
+          title="Card 3"
+          image={Mahindra}
+          link="/MahindraThar"
+        />
+        <Cards
+          title="Card 3"
+          image={Mahindra}
+          link="/MahindraThar"
+        />
+      </div>
+    </div>
             <div className='flex flex-row'>
                 <Link to={"/Maruti"}>
                     <Cards image={Maruti} title={"Maruti suzuki"} />
