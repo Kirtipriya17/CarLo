@@ -1,56 +1,32 @@
-
 import React from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import vedio from '../assets/mix/V1.mp4'
-import Cards from './Cards';
+import video from '../assets/mix/v4.mp4'
+import Card from './Cards'
+import L from '../assets/mix/L.jpg'
+import B from '../assets/mix/B.jpg'
 
-
-
-
-export default function Slider() {
+export default function Home() {
   return (
-    <><div>
-      <h1 className='text-center text-blue-900 m-1 text-bold font-bold text-2xl '>Find The Cars Of Your Choice</h1>
-
-      <Carousel autoPlay infiniteLoop interval={3000} stopOnHover={false} showThumbs={false}
-        showArrows={false} showStatus={false}>
-        <div className='m-2 p-2'>
-          <video src={vedio} autoPlay loop muted />
-
-
-
-        </div>
-        <div className='m-2 p-2'>
-          <img className='rounded-xl max-h-[100vh] ' src='../../src/assets/1.jpg' />
-
-        </div>
-        <div className='m-2 p-2'>
-          <img className='rounded-xl max-h-[100vh] ' src='../../src/assets/5.jpg' />
-        </div>
-        <div className='m-2 p-2'>
-          <img className='rounded-xl max-h-[100vh] ' src='../../src/assets/6.jpg' />
-        </div>
+    <div className='relative'>
+       <video className='bg-cover max-h-50 ' src={video} autoPlay loop muted/>
+      <div>
+      <h1 className='absolute left-10 top-20 font-bold size-19 text-5xl text-gray-700 '>Ride in Style, Drive with Pride!</h1>
+        <h2 className='absolute left-10 top-28 m-5 font-bold size-25 text-4xl text-red-700'> Unlock your journey with our cars!</h2>
+      </div>
+      <div className='h-[60] flex items-center bg-red-200 w-full justify-center
+        mt-4'>
+        <h4 className='text-centre text-3xl font-display '>
+          Buy your Dream Car today!
+        </h4>
+      </div>
 
 
-
-      </Carousel>
-
-    </div><div>
-        <h3>All Brands </h3>
-        <div>
-          <Cards title={"hh"}  />
-          <Cards title={"ggg"}/>
-        </div>
-
-      </div></>
-
-
-
-
-
-)
+     
+      <div className='flex flex-row ' >
+        <Card title={"hh"} image={L}/>
+        <Card  title={"kk"}  image={B}/>
+       
+       </div>
+    </div>
+    
+  )
 }
-  
-
-
