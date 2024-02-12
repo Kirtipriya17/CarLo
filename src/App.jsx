@@ -12,6 +12,7 @@ import Home from './Components/Home';
 import Cars from './Components/Cars';
 import MahindraThar from './Pages/Mahindra/Mahindra Thar';
 import Mahindra from './Pages/Brand/Mahindra';
+import Test from './Rough/Test';
 
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
      <Route path='/about' element={<About/>}/>
      <Route path='/' element={<Home/>}/>
      <Route path='/Car' element={<Cars/>}/>
+     <Route path='/test' element={<Test/>}/>
      
      
     </Routes>
