@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Brands from './Components/Brands'
-import Navbar from './Components/Navbar'
+import Navbar from './Components/Navbar.jsx'
 import Maruti from './Pages/Brand/Maruti'
 import BMW from './Pages/Brand/BMW'
 import Toyota from './Pages/Brand/Toyota'
@@ -12,6 +12,9 @@ import Home from './Components/Home';
 import Cars from './Components/Cars';
 import MahindraThar from './Pages/Mahindra/Mahindra Thar';
 import Mahindra from './Pages/Brand/Mahindra';
+import BookingPage from './Components/BookingPage';
+import Register from './Components/Register';
+import Footer from './Components/Footer';
 
 
 export default function App() {
@@ -34,10 +37,13 @@ export default function App() {
      <Route path='/about' element={<About/>}/>
      <Route path='/' element={<Home/>}/>
      <Route path='/Car' element={<Cars/>}/>
+     <Route path='/BookingPage' element={<BookingPage/>}/>
+     <Route path='/Register' element={<Register/>}/>
+     
      
      
     </Routes>
-   
+   <Footer/>
     
    </div>
   )

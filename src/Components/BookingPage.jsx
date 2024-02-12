@@ -1,91 +1,55 @@
+// components/BookingPage.jsx
 import React, { useState } from 'react';
 
-const BookingPage = () => {
-  // State for selected car
-  const [selectedCar, setSelectedCar] = useState(null);
-  
-  // State for selected dates
-  const [selectedDates, setSelectedDates] = useState({ startDate: null, endDate: null });
-  
-  // State for customer information
-  const [customerInfo, setCustomerInfo] = useState({
-    name: '',
-    email: '',
-    phone: ''
+function BookingPage() {
+  const [formData, setFormData] = useState({
+    pickupLocation: '',
+    dropoffLocation: '',
+    pickupDate: '',
+    dropoffDate: '',
+    numberOfGuests: ''
   });
 
-  // Function to handle car selection
-  const handleCarSelection = (car) => {
-    setSelectedCar(car);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Function to handle date selection
-  const handleDateSelection = (startDate, endDate) => {
-    setSelectedDates({ startDate, endDate });
-  };
-
-  // Function to handle customer information input
-  const handleCustomerInfoChange = (e) => {
-    const { name, value } = e.target;
-    setCustomerInfo({ ...customerInfo, [name]: value });
-  };
-
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform booking submission logic here
-    console.log("Booking submitted:", selectedCar, selectedDates, customerInfo);
-    // Reset form after submission
-    setSelectedCar(null);
-    setSelectedDates({ startDate: null, endDate: null });
-    setCustomerInfo({
-      name: '',
-      email: '',
-      phone: ''
-    });
+    // Add your booking logic here
+    console.log('Form submitted:', formData);
   };
 
   return (
-    <div className='flex justify-center self-center h-[100vh] items-center bg-slate-400'>
-      <h1>Car Booking</h1>
-      <form onSubmit={handleSubmit} action=""className='flex flex-col'>
-        <label>
-          Select Car:
-          <select value={selectedCar} onChange={(e) => handleCarSelection(e.target.value)}>
-            <option value="">Select a car</option>
-            <option value="car1">Car 1</option>
-            <option value="car2">Car 2</option>
-            <option value="car3">Car 3</option>
-            {/* Add more options as needed */}
-          </select>
-        </label>
-        <br />
-        <label>
-          Select Dates:
-          <input type="date" value={selectedDates.startDate} onChange={(e) => handleDateSelection(e.target.value, selectedDates.endDate)} />
-          <input type="date" value={selectedDates.endDate} onChange={(e) => handleDateSelection(selectedDates.startDate, e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Name:
-          <input type="text" name="name" value={customerInfo.name} onChange={handleCustomerInfoChange} />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input type="email" name="email" value={customerInfo.email} onChange={handleCustomerInfoChange} />
-        </label>
-        <br />
-        <label>
-          Phone:
-          <input type="tel" name="phone" value={customerInfo.phone} onChange={handleCustomerInfoChange} />
-        </label>
-        <br />
-        <button type="submit" disabled={!selectedCar || !selectedDates.startDate || !selectedDates.endDate || !customerInfo.name || !customerInfo.email || !customerInfo.phone}>Submit</button>
-      </form>
+    <div className="min-h-screen bg-gray-400 flex items-center justify-center">
+      <div className="max-w-md bg-white p-8 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-semibold text-center mb-6 hover:text-blue-400">Book Your Car</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="pickup-location" className="block text-gray-700 font-bold mb-2">Pickup Location</label>
+            <input type="text" id="pickup-location" name="pickupLocation" value={formData.pickupLocation} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="dropoff-location" className="block text-gray-700 font-bold mb-2">Dropoff Location</label>
+            <input type="text" id="dropoff-location" name="dropoffLocation" value={formData.dropoffLocation} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="pickup-date" className="block text-gray-700 font-bold mb-2">Pickup Date</label>
+            <input type="date" id="pickup-date" name="pickupDate" value={formData.pickupDate} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="dropoff-date" className="block text-gray-700 font-bold mb-2">Dropoff Date</label>
+            <input type="date" id="dropoff-date" name="dropoffDate" value={formData.dropoffDate} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="guests" className="block text-gray-700 font-bold mb-2">Number of Guests</label>
+            <input type="number" id="guests" name="numberOfGuests" value={formData.numberOfGuests} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
+          </div>
+          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 w-full">Book Now</button>
+        </form>
+      </div>
     </div>
   );
-};
+}
 
 export default BookingPage;
-
