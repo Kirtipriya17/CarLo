@@ -39,6 +39,9 @@ const Navbar = () => {
             </Link>
             <Link to={'./Login'}>
             </Link>
+            <Link to={'./Login'}>
+            <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold">Login</a>
+            </Link>
             <Link to={'./Register'}>
             <a href="#" className="text-gray-400  hover:text-gray-700 py-2 md:px-4 font-bold">Register</a>
             </Link>
