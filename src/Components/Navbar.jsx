@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           <div className={`md:flex flex-col md:flex-row md:items-center ${isOpen ? 'flex' : 'hidden'}`}>
             <Link to={'./Home'}>
-            <a href="#" className="text-gray-400  hover:text-gray-700py-2 md:px-4 font-bold ">Home</a>
+            <a href="#" className="text-gray-400  hover:text-gray-700 py-2 md:px-4 font-bold ">Home</a>
             </Link>
             <Link to={'./About'}>
             <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold">About</a>
