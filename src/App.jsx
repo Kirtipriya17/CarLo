@@ -12,6 +12,7 @@ import Home from './Components/Home';
 import Cars from './Components/Cars';
 import MahindraThar from './Pages/Mahindra/Mahindra Thar';
 import Mahindra from './Pages/Brand/Mahindra';
+import Footer from './Components/Footer.jsx';
 
 
 export default function App() {

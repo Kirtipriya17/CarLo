@@ -37,8 +37,8 @@ const Navbar = () => {
             <Link to={'./Brands'}>
             <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold">Brands</a>
             </Link>
-            <Link to={'./Login'}>
-            </Link>
+            
+        
             <Link to={'./Login'}>
             <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold">Login</a>
             </Link>
