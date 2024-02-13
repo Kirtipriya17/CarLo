@@ -38,7 +38,7 @@ export default function App() {
    <div>
     
 
-    {/* <Navbar/> */}
+    <Navbar/>
     
     <Routes>
      <Route path='/' element={<Home/>}/>
@@ -71,7 +71,7 @@ export default function App() {
 
      
     </Routes>
-   {/* <Footer/> */}
+   <Footer/>
     
    </div>
   )
