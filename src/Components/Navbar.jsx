@@ -28,7 +28,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className={`md:flex flex-col md:flex-row md:items-center ${isOpen ? 'flex' : 'hidden'}`}>
-            <Link to={'./Home'}>
+            <Link to={'/'}>
             <a href="#" className="text-gray-400  hover:text-gray-700 py-2 md:px-4 font-bold ">Home</a>
             </Link>
             <Link to={'./About'}>

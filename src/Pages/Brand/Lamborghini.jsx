@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Lamborgnini() {
+export default function Lamborghini() {
   return (
-    <div>Lamborgnini</div>
+    <div>Lamborghini</div>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Props from '../../Components/Props'
 import H1 from '../../assets/1.jpg'
+import H2 from '../../assets/2.jpg'
+import H3 from '../../assets/5.jpg'
 
 export default function MahindraThar() {
 

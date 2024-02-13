@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function RousRoyce() {
+export default function RollsRoyce() {
   return (
-    <div>RousRoyce</div>
+    <div>RollsRoyce</div>
   )
 }
