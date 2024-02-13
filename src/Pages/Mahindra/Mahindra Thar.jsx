@@ -1,9 +1,6 @@
 import React from 'react'
 import Props from '../../Components/Props'
 import H1 from '../../assets/1.jpg'
-import H2 from '../../assets/Brands/Ford.jpg'
-import H3 from '../../assets/Brands/Jeep.jpg'
-import { Container } from 'postcss'
 
 export default function MahindraThar() {
 

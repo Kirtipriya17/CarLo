@@ -8,7 +8,7 @@ export default function Card({title,image,link}) {
       <img className="object-cover w-full h-full" src={image} alt="Card" />
     </div>
     <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">{title}</div>
+      <div className="font-bold text-xl mb-2 justify-center">{title}</div>
     </div>
   </Link>
   )
