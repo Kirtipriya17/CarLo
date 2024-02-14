@@ -1,12 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Brands from './Components/Brands'
+import Brands from './Pages/Brands.jsx'
 import Navbar from './Components/Navbar.jsx'
 import Login from './Components/Login';
 import About from './Components/About';
 import Home from './Components/Home';
-import Cars from './Components/Cars';
 import Footer from './Components/Footer.jsx';
 import Register from './Components/Register.jsx';
 import BookingPage from './Components/BookingPage.jsx';
@@ -47,7 +46,7 @@ export default function App() {
      <Route path='/about' element={<About/>}/>
      <Route path='/Register' element={<Register/>}/>
      <Route path='/BookingPage' element={<BookingPage/>}/>
-     <Route path='/Car' element={<Cars/>}/>
+   
      
 
      <Route path='/Tata' element={<Tata/>}/>

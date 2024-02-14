@@ -1,6 +1,6 @@
 import React from 'react'
 import video from '../assets/mix/v1.mp4'
-import Card from './Cards'
+import Card from './BrandCards'
 import L from '../assets/mix/L.jpg'
 import B from '../assets/mix/B.jpg'
 
