@@ -1,44 +1,33 @@
-// components/LoginPage.jsx
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Login() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your login logic here
-    console.log('Form submitted:', formData);
-  };
-
+export default function Login() {
   return (
-    <div className="min-h-screen bg-gray-400 flex items-center justify-center">
-      <div className="max-w-md bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-3xl font-semibold text-center mb-6 hover:text-blue-400">Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email Address</label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
-          </div>
-          <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700 font-bold mb-2">Password</label>
-            <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
-          </div>
-          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 w-full">Login</button>
-        </form>
-        <div className="text-center mt-4">
-          <p className="text-gray-700">Don't have an account? <Link to="/register" className="text-blue-500 hover:underline">Sign up here</Link></p>
+    <form action=''>
+      <div className='text-white h-[100vh] flex justify-center items-center bg-cover'style={{"background":"url('../src/assets/5.jpg')"}}>
+      <div className='bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-sm bg-opacity-30 relative'>
+        <h1 className='text-4xl text-white font-bold'>Login</h1>
+        <div className='realtive my-4'>
+          <input type='email'className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer'/>
+          <label htmlFor=''>your Email</label>
+          {/* <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:translate-y-6'>your email</label> */}
         </div>
+        <div className='realtive my-4'>
+          <input type='Password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer'/>
+          
+          <label htmlFor=''>your Password</label>
+        </div>
+        <div>
+          <input type='checkbox' name="" id=""/>
+          <label htmlFor='remember me'></label>
+        </div>
+        <span> Forget Password?</span>
       </div>
+      <button type='submit'>Login</button>
     </div>
-  );
+    <div>
+      <span>New here? <Link to="Register">Create an account</Link></span>
+    </div>
+    </form>
+  )
 }
-
-export default Login;
