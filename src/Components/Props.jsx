@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import '../style.css'
 
-export default function Props({ imagesArray, brand, images, Features, Car, Price, About,StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
+export default function Props({ imagesArray, brand, images, Features, Car, Price, About, StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
 // Engine, Power, Torque, Seat, Drive, Mileage, Feature
 {
 
@@ -33,9 +33,9 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
 
   return (
     <>
-     <div className="flex h-screen justify-center items-center ">
-      <div className="bg-blue-500 w-1/8 h-full">
-        <div className='flex flex-col gap-12 justify-between h-24'>
+      <div className="flex h-screen justify-center items-center ">
+        <div className="bg-blue-500 w-1/8 h-full">
+          <div className='flex flex-col gap-12 justify-between h-24'>
             {imagesArray.map((image, index) => (
               <img
                 key={index}
@@ -46,31 +46,35 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
               />
             ))}
           </div></div>
-      <div className="bg-green-500 w-1/2 h-full">
-        <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl' /></div>
-      <div className="bg-red-500 w-1/4 h-full">
-        <div className=''>
-          <div>
-            <span className=' text-violet-600 font-semibold'>{brand}</span>
-            <h1 className='text-3xl font-bold'>{Car}</h1>
-          </div>
-          <p className='text-gray-700'>
-            {About} </p>
-          <h6 className='text-2xl font-semibold'>{Price}</h6>
-          <div className='flex flex-row items-center gap-12'>
-            <div className='flex flex-row items-center'>
-              <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
-              <span className='py-4 px-6 rounded-lg'>{amount}</span>
-              <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
+        <div className="bg-green-500 w-1/2 h-full">
+          <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl' /></div>
+        <div className="bg-red-500 w-1/4 h-full">
+          <div className=''>
+            <div>
+              <span className=' text-violet-600 font-semibold'>{brand}</span>
+              <h1 className='text-3xl font-bold'>{Car}</h1>
             </div>
-            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+            <p className='text-gray-700'>
+              {About} </p>
+            <h6 className='text-2xl font-semibold'>{Price}</h6>
+            <div className='flex flex-row items-center gap-12'>
+              <div className='flex flex-row items-center'>
+                <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
+                <span className='py-4 px-6 rounded-lg'>{amount}</span>
+                <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
+              </div>
+              <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+            </div>
           </div>
-    </div>
+        </div>
       </div>
-    </div>
 
-<div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center'>
-  <div className='flex flex-col gap-6 lg:w-2/4'>
+      
+      
+      <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
+      <div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center'>
+        <div className='flex flex-col gap-6 lg:w-2/4'>
+            <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl ' />
           <div className='flex flex-row justify-between h-24'>
             {imagesArray.map((image, index) => (
               <img
@@ -82,11 +86,10 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
               />
             ))}
           </div>
-          <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl' />
 
-   </div>
+        </div>
         {/* ABOUT */}
-   <div className='flex flex-col gap-4 lg:w-2/4'>
+        <div className='flex flex-col gap-4 lg:w-2/4'>
           <div>
             <span className=' text-violet-600 font-semibold'>{brand}</span>
             <h1 className='text-3xl font-bold'>{Car}</h1>
@@ -102,20 +105,19 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
             </div>
             <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
           </div>
-    </div>
-</div>
+        </div>
+      </div>
+      </div>
 
 
       <br />
 
-      <div className='ml-[100px] mr-[50px]' >
+      <div >
 
-
-
-        <div>
+        <div className='border hover:border-gray-900 shadow-black transition duration-300 ease-in-out m-4 p-5 shadow-xl'>
           <p className='font-bold'> {Car} </p>
           <h1>{About}</h1>
-        </div>
+       </div>
 
         {/* <button onClick={() => setShowText(!showText)}>
           <h1  className='font-bold '>
@@ -126,8 +128,12 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
       <p> Hello </p> </div>} */}
 
 
-        <div><br />
-          <h5 className='font-bold'>Specification of {Car}</h5>
+
+
+
+
+        <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
+          <h5 className='font-bold '>Specification of {Car}</h5>
           <section class="table__body">
             <table>
               <tbody>
@@ -149,7 +155,7 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
 
 
 
-        <div>
+        <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
           <h1 className='font-bold'>Features of {Car}</h1>
           <section class="table__body">
             <table>
@@ -164,26 +170,27 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
             </table>
 
           </section>
+          </div>
 
-          <div><br />
+          <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
             <p className='font-bold'>Standout Features of {Car}</p>
             <div className='flex flex-row'>
-            <table>
+              <table>
 
-<tbody>
-  {StandoutFeatures.map((value) => (
-    <tr>
-      <td>{value}</td>
-    </tr>
-  ))}
-</tbody>
-</table>
+                <tbody>
+                  {StandoutFeatures.map((value) => (
+                    <tr>
+                      <td>{value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
 
 
-      </div>
+    
     </>
   )
 }
