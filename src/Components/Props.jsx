@@ -1,23 +1,17 @@
 import React, { useEffect, useState } from 'react'
 
-import h1 from '../assets/1.jpg';
-import h2 from '../assets/2.jpg';
-import h5 from '../assets/5.jpg';
-import h3 from '../assets/3.jpg';
-import h4 from '../assets/5.jpg';
-
 import '../style.css'
 
-export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
+export default function Props({ imagesArray, brand, images, Features, Car, Price, About, StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
 // Engine, Power, Torque, Seat, Drive, Mileage, Feature
 {
 
   const [showText, setShowText] = useState(false);
-  const imagesArray = [h1, h2, h3,h5 , h4];
+  // const imagesArray = [h1, h2, h3,h5 , h4];
   const [activeIndex, setActiveIndex] = useState(0);
   const [amount, setAmount] = useState(1);
   const handleImageClick = (index) => {
-      setActiveIndex(index);
+    setActiveIndex(index);
   };
 
 
@@ -39,74 +33,91 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
 
   return (
     <>
-
-<div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center'>
-            <div className='flex flex-col gap-6 lg:w-2/4'>
-                <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl' />
-                <div className='flex flex-row justify-between h-24'>
-                    {imagesArray.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt=""
-                            className={`w-24 h-24 rounded-md cursor-pointer ${activeIndex === index ? 'border-2 border-blue-500' : ''}`}
-                            onClick={() => handleImageClick(index)}
-                        />
-                    ))}
-                </div>
-               
-            </div>
-            {/* ABOUT */}
-            <div className='flex flex-col gap-4 lg:w-2/4'>
-                <div>
-                    <span className=' text-violet-600 font-semibold'>Special Sneaker</span>
-                    <h1 className='text-3xl font-bold'>Nike Invincible 3</h1>
-                </div>
-                <p className='text-gray-700'>
-                Con un'ammortizzazione incredibile per sostenerti in tutti i tuoi chilometri, Invincible 3 offre un livello di comfort elevatissimo sotto il piede per aiutarti a dare il massimo oggi, domani e oltre. Questo modello incredibilmente elastico e sostenitivo, è pensato per dare il massimo lungo il tuo percorso preferito e fare ritorno a casa carico di energia, in attesa della prossima corsa.
-                </p>
-                <h6 className='text-2xl font-semibold'>$ 199.00</h6>
-                <div className='flex flex-row items-center gap-12'>
-                    <div className='flex flex-row items-center'>
-                        <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
-                        <span className='py-4 px-6 rounded-lg'>{amount}</span>
-                        <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
-                    </div>
-                    <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
-                </div>
-            </div>
-        </div>
-
-  <div className='grid grid-cols-2'>
-
-        <div className="container mx-auto">
-          <div className="relative">
-            <div className="overflow-hidden w-2/3 mx-auto" style={{ maxWidth: '400px', height: '300px' }}>
+      <div className="flex h-screen justify-center items-center ">
+        <div className="bg-blue-500 w-1/8 h-full">
+          <div className='flex flex-col gap-12 justify-between h-24'>
+            {imagesArray.map((image, index) => (
               <img
-                src={images[currentImageIndex]}
-                alt="Slider"
-                className='w-full h-full object-cover transition-all duration-500 transform rounded-xl border-black border-4'
+                key={index}
+                src={image}
+                alt=""
+                className={`w-24 h-24 rounded-md cursor-pointer ${activeIndex === index ? 'border-2 border-blue-500' : ''}`}
+                onClick={() => handleImageClick(index)}
               />
+            ))}
+          </div></div>
+        <div className="bg-green-500 w-1/2 h-full">
+          <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl' /></div>
+        <div className="bg-red-500 w-1/4 h-full">
+          <div className=''>
+            <div>
+              <span className=' text-violet-600 font-semibold'>{brand}</span>
+              <h1 className='text-3xl font-bold'>{Car}</h1>
+            </div>
+            <p className='text-gray-700'>
+              {About} </p>
+            <h6 className='text-2xl font-semibold'>{Price}</h6>
+            <div className='flex flex-row items-center gap-12'>
+              <div className='flex flex-row items-center'>
+                <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
+                <span className='py-4 px-6 rounded-lg'>{amount}</span>
+                <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
+              </div>
+              <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
             </div>
           </div>
         </div>
-        <div>
-      <p> {Car} <br /> {Price}</p>
-    </div>
- </div>
-<br />
+      </div>
 
-      <div className='ml-[100px] mr-[50px]' >
+      
+      
+      <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
+      <div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center'>
+        <div className='flex flex-col gap-6 lg:w-2/4'>
+            <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl ' />
+          <div className='flex flex-row justify-between h-24'>
+            {imagesArray.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt=""
+                className={`w-24 h-24 rounded-md cursor-pointer ${activeIndex === index ? 'border-2 border-blue-500' : ''}`}
+                onClick={() => handleImageClick(index)}
+              />
+            ))}
+          </div>
 
-        
-
-        <div>
-          <p className='font-bold'> {Car} </p>
-          <h1>{about}</h1>
         </div>
+        {/* ABOUT */}
+        <div className='flex flex-col gap-4 lg:w-2/4'>
+          <div>
+            <span className=' text-violet-600 font-semibold'>{brand}</span>
+            <h1 className='text-3xl font-bold'>{Car}</h1>
+          </div>
+          <p className='text-gray-700'>
+            {About} </p>
+          <h6 className='text-2xl font-semibold'>{Price}</h6>
+          <div className='flex flex-row items-center gap-12'>
+            <div className='flex flex-row items-center'>
+              <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
+              <span className='py-4 px-6 rounded-lg'>{amount}</span>
+              <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
+            </div>
+            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      </div>
 
 
+      <br />
 
+      <div >
+
+        <div className='border hover:border-gray-900 shadow-black transition duration-300 ease-in-out m-4 p-5 shadow-xl'>
+          <p className='font-bold'> {Car} </p>
+          <h1>{About}</h1>
+       </div>
 
         {/* <button onClick={() => setShowText(!showText)}>
           <h1  className='font-bold '>
@@ -117,8 +128,12 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
       <p> Hello </p> </div>} */}
 
 
-        <div><br />
-          <h5 className='font-bold'>Specification of {Car}</h5>
+
+
+
+
+        <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
+          <h5 className='font-bold '>Specification of {Car}</h5>
           <section class="table__body">
             <table>
               <tbody>
@@ -138,35 +153,44 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
           </section>
         </div>
 
-        <div>
+
+
+        <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
           <h1 className='font-bold'>Features of {Car}</h1>
           <section class="table__body">
             <table>
+
               <tbody>
-                <tr><td> Power Steering</td> <td> </td></tr>
-                <tr><td>Power Windows Front  </td> <td> </td></tr>
-                <tr><td>Anti Lock Braking System </td> <td> </td></tr>
-                <tr><td>Air Conditioner  </td> <td> </td></tr>
-                <tr><td>Driver Airbag  </td> <td> </td></tr>
-                <tr><td> Passenger Airbag</td> <td> </td></tr>
-                <tr><td> Alloy Wheels</td> <td> </td></tr>
-                <tr><td> Multi-function Steering Wheel</td> <td> </td></tr>
-                <tr><td> </td> <td> </td></tr>
+                {Features.map((value) => (
+                  <tr>
+                    <td>{value}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
+
           </section>
-          <div><br />
+          </div>
+
+          <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
             <p className='font-bold'>Standout Features of {Car}</p>
             <div className='flex flex-row'>
-              {F1} <br />
-              {F2} <br />
-              {F3} <br />
+              <table>
+
+                <tbody>
+                  {StandoutFeatures.map((value) => (
+                    <tr>
+                      <td>{value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
 
 
-      </div>
+    
     </>
   )
 }

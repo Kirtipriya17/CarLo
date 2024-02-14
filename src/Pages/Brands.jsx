@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './Cards'
+import Cards from '../Components/BrandCards'
 
 import BMW from "../assets/Brands/BMW.jpg"
 import Maruti from "../assets/Brands/Maruti.jpg"
