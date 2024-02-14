@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-import h1 from '../assets/1.jpg';
-import h2 from '../assets/2.jpg';
-import h5 from '../assets/5.jpg';
-import h3 from '../assets/3.jpg';
-import h4 from '../assets/5.jpg';
-
 import '../style.css'
 
-export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
+export default function Props({imagesArray,brand, images, data, Car, Price, About, F1, F2, F3, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
 // Engine, Power, Torque, Seat, Drive, Mileage, Feature
 {
 
   const [showText, setShowText] = useState(false);
-  const imagesArray = [h1, h2, h3,h5 , h4];
+  // const imagesArray = [h1, h2, h3,h5 , h4];
   const [activeIndex, setActiveIndex] = useState(0);
   const [amount, setAmount] = useState(1);
   const handleImageClick = (index) => {
@@ -59,13 +53,12 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
             {/* ABOUT */}
             <div className='flex flex-col gap-4 lg:w-2/4'>
                 <div>
-                    <span className=' text-violet-600 font-semibold'>Special Sneaker</span>
-                    <h1 className='text-3xl font-bold'>Nike Invincible 3</h1>
+                    <span className=' text-violet-600 font-semibold'>{brand}</span>
+                    <h1 className='text-3xl font-bold'>{Car}</h1>
                 </div>
                 <p className='text-gray-700'>
-                Con un'ammortizzazione incredibile per sostenerti in tutti i tuoi chilometri, Invincible 3 offre un livello di comfort elevatissimo sotto il piede per aiutarti a dare il massimo oggi, domani e oltre. Questo modello incredibilmente elastico e sostenitivo, è pensato per dare il massimo lungo il tuo percorso preferito e fare ritorno a casa carico di energia, in attesa della prossima corsa.
-                </p>
-                <h6 className='text-2xl font-semibold'>$ 199.00</h6>
+               {About} </p>
+                <h6 className='text-2xl font-semibold'>{Price}</h6>
                 <div className='flex flex-row items-center gap-12'>
                     <div className='flex flex-row items-center'>
                         <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
@@ -77,23 +70,7 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
             </div>
         </div>
 
-  <div className='grid grid-cols-2'>
-
-        <div className="container mx-auto">
-          <div className="relative">
-            <div className="overflow-hidden w-2/3 mx-auto" style={{ maxWidth: '400px', height: '300px' }}>
-              <img
-                src={images[currentImageIndex]}
-                alt="Slider"
-                className='w-full h-full object-cover transition-all duration-500 transform rounded-xl border-black border-4'
-              />
-            </div>
-          </div>
-        </div>
-        <div>
-      <p> {Car} <br /> {Price}</p>
-    </div>
- </div>
+ 
 <br />
 
       <div className='ml-[100px] mr-[50px]' >
@@ -102,11 +79,8 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
 
         <div>
           <p className='font-bold'> {Car} </p>
-          <h1>{about}</h1>
+          <h1>{About}</h1>
         </div>
-
-
-
 
         {/* <button onClick={() => setShowText(!showText)}>
           <h1  className='font-bold '>
@@ -141,7 +115,17 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
         <div>
           <h1 className='font-bold'>Features of {Car}</h1>
           <section class="table__body">
-            <table>
+          <table>
+      
+      <tbody>
+        {data.map((value) => (
+          <tr>
+            <td>{value}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+            {/* <table>
               <tbody>
                 <tr><td> Power Steering</td> <td> </td></tr>
                 <tr><td>Power Windows Front  </td> <td> </td></tr>
@@ -153,7 +137,7 @@ export default function Props({ images, Car, Price, about, F1, F2, F3, Mileage, 
                 <tr><td> Multi-function Steering Wheel</td> <td> </td></tr>
                 <tr><td> </td> <td> </td></tr>
               </tbody>
-            </table>
+            </table> */}
           </section>
           <div><br />
             <p className='font-bold'>Standout Features of {Car}</p>

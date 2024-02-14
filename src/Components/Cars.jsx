@@ -6,7 +6,7 @@ import '../style.css'
 export default function Cars({image,car,price,spec}) {
   return (
     <div>
-        <div class="card-list">
+        <div class="card-list" >
             <a href="#" class="card-item">
                 <img src={image} alt="" />
                 <h3>{car}</h3>
@@ -15,7 +15,7 @@ export default function Cars({image,car,price,spec}) {
                 <span class="designer">AddTo Cart</span>
                 
             </a>
-            {/* <a href="#" class="card-item">
+            <a href="#" class="card-item">
                 
                 <img src={h1} alt="" />
                 <span class="designer">Designer</span>
@@ -31,7 +31,7 @@ export default function Cars({image,car,price,spec}) {
                 <div class="arrow">
                     <i class="fas fa-arrow-right card-icon"></i>
                 </div>
-            </a> */}
+            </a>
           
         </div>
     </div>
