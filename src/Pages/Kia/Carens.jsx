@@ -26,7 +26,7 @@ export default function Carens() {
               MaxTorque={"250Nm@1500-2750rpm"} 
               Seat={"6.7"} 
               TransmissionType={"Automatic"}
-               FuelCapacity={"216 Litres"}
+               FuelCapacity={"45 Litres"}
                 BodyType={"SUV"} 
                 GroundClearanceUnladen={""}
 
