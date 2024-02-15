@@ -28,6 +28,8 @@ import Porsche from './Pages/Brand/Porsche.jsx';
 import Volvo from './Pages/Brand/Volvo.jsx';
 
 import MahindraThar from './Pages/Mahindra/Mahindra Thar.jsx';
+import F296GTB from './Pages/Ferrari/F296GTB.jsx';
+import F8Tributo from './Pages/Ferrari/F8Tributo.jsx';
 
 
 export default function App() {
@@ -66,6 +68,9 @@ export default function App() {
      <Route path='/Porsche' element={<Porsche/>}/>
      <Route path='/Volvo' element={<Volvo/>}/>
 
+
+     <Route path='/F296GTB' element={<F296GTB/>}/>
+     <Route path='/F8Tributo' element={<F8Tributo/>}/>
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
 
      
