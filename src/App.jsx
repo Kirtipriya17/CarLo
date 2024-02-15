@@ -30,6 +30,10 @@ import Volvo from './Pages/Brand/Volvo.jsx';
 import MahindraThar from './Pages/Mahindra/Mahindra Thar.jsx';
 import F296GTB from './Pages/Ferrari/F296GTB.jsx';
 import F8Tributo from './Pages/Ferrari/F8Tributo.jsx';
+import Carens from './Pages/Kia/Carens.jsx';
+import EV6 from './Pages/Kia/EV6.jsx';
+import Seltos from './Pages/Kia/Seltos.jsx';
+import Sonet from './Pages/Kia/Sonet.jsx';
 
 
 export default function App() {
@@ -71,6 +75,12 @@ export default function App() {
 
      <Route path='/F296GTB' element={<F296GTB/>}/>
      <Route path='/F8Tributo' element={<F8Tributo/>}/>
+
+     <Route path='/Carens' element={<Carens/>}/>
+     <Route path='/EV6' element={<EV6/>}/>
+     <Route path='/Seltos' element={<Seltos/>}/>
+     <Route path='/Sonet' element={<Sonet/>}/>
+
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
 
      
