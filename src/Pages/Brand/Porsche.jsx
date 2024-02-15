@@ -1,4 +1,6 @@
 import React from 'react'
+import CarCards from '../../Components/CarCards'
+import h1 from '../../assets/2.jpg'
 
 export default function Porsche() {
   return (
