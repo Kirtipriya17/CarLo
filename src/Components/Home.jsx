@@ -3,6 +3,8 @@ import video from '../assets/mix/v1.mp4'
 import Card from './BrandCards'
 import L from '../assets/mix/L.jpg'
 import B from '../assets/mix/B.jpg'
+import { Link } from 'react-router-dom'
+import BrandSlider from './BrandSlider'
 
 export default function Home() {
   return (
@@ -18,8 +20,11 @@ export default function Home() {
           Buy your Dream Car today!
         </h4>
       </div>
-
-
+<br />
+      <div >
+        <Link to={"/Brands"} className='p-[250px] font-bold text-2xl' >All Brands</Link>
+        <BrandSlider/>
+      </div>
      
       <div className='flex flex-row ' >
         <Card title={"hh"} image={L}/>

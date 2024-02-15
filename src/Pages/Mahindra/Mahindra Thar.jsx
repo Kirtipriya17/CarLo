@@ -22,7 +22,7 @@ export default function MahindraThar() {
 </div> */}
 </div>
        
-        <Props imagesArray={[H1,H2,H3]} brand={"Mahindra"}
+        <Props imagesArray={[H1,H2,H3,H1]} brand={"Mahindra"}
         images={images}
         Features={['Power Steering','Power Windows Front','Anti Lock Braking System','Air Conditioner','Driver Airbag ','Passenger Airbag','Alloy Wheels','Multi-function Steering Wheel']} pic1={H1} pic2={H2} pic3={H3} Car={"Mahindra Thar"} Price={"Rs 100000"}
         About={"The Mahindra Thar has evolved from a simple, old off-roader to a versatile and modern SUV that can take you anywhere in comfort. Available with multiple drivetrain options and many variants, the Thar offers loads of road presence and strong performance both on and off the road. However, its two-door configuration puts a small dent on the practicality front."}
