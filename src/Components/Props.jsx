@@ -2,12 +2,10 @@ import React, { useEffect, useState } from 'react'
 
 import '../style.css'
 
-export default function Props({ imagesArray, brand, images, Features, Car, Price, About, StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
-// Engine, Power, Torque, Seat, Drive, Mileage, Feature
+export default function Props({ imagesArray, brand, Features, Car, Price, About, StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
+
 {
 
-  const [showText, setShowText] = useState(false);
-  // const imagesArray = [h1, h2, h3,h5 , h4];
   const [activeIndex, setActiveIndex] = useState(0);
   const [amount, setAmount] = useState(1);
   const handleImageClick = (index) => {
@@ -15,77 +13,28 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
   };
 
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 1000); // Change slide every 3 seconds
-
-    return () => clearInterval(intervalId);
-  }, [currentImageIndex]); // Restart interval when currentImageIndex changes
-
-  const nextSlide = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
 
 
   return (
     <>
-      <div className="flex h-screen justify-center items-center ">
-        <div className="bg-blue-500 w-1/8 h-full">
-          <div className='flex flex-col gap-12 justify-between h-24'>
-            {imagesArray.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt=""
-                className={`w-24 h-24 rounded-md cursor-pointer ${activeIndex === index ? 'border-2 border-blue-500' : ''}`}
-                onClick={() => handleImageClick(index)}
-              />
-            ))}
-          </div></div>
-        <div className="bg-green-500 w-1/2 h-full">
-          <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl' /></div>
-        <div className="bg-red-500 w-1/4 h-full">
-          <div className=''>
-            <div>
-              <span className=' text-violet-600 font-semibold'>{brand}</span>
-              <h1 className='text-3xl font-bold'>{Car}</h1>
-            </div>
-            <p className='text-gray-700'>
-              {About} </p>
-            <h6 className='text-2xl font-semibold'>{Price}</h6>
-            <div className='flex flex-row items-center gap-12'>
-              <div className='flex flex-row items-center'>
-                <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
-                <span className='py-4 px-6 rounded-lg'>{amount}</span>
-                <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
-              </div>
-              <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       
       
       <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
       <div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center'>
         <div className='flex flex-col gap-6 lg:w-2/4'>
-            <img src={imagesArray[activeIndex]} alt="" className='w-full h-full aspect-square object-cover rounded-xl ' />
-          <div className='flex flex-row justify-between h-24'>
-            {imagesArray.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt=""
-                className={`w-24 h-24 rounded-md cursor-pointer ${activeIndex === index ? 'border-2 border-blue-500' : ''}`}
-                onClick={() => handleImageClick(index)}
-              />
-            ))}
-          </div>
+            <img src={imagesArray[activeIndex]} alt="" className='w-[400-px] h-[500px] aspect-square object-cover rounded-xl ' />
+            <div className='flex justify-center gap-2 p-4'>
+              {imagesArray.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt=""
+                  className={`w-20 h-20 rounded-md cursor-pointer ${activeIndex === index ? 'border-2 border-blue-500' : ''}`}
+                  onClick={() => handleImageClick(index)}
+                />
+              ))}
+            </div>
 
         </div>
         {/* ABOUT */}
@@ -113,19 +62,11 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
       <br />
 
       <div >
-
         <div className='border hover:border-gray-900 shadow-black transition duration-300 ease-in-out m-4 p-5 shadow-xl'>
           <p className='font-bold'> {Car} </p>
           <h1>{About}</h1>
        </div>
 
-        {/* <button onClick={() => setShowText(!showText)}>
-          <h1  className='font-bold '>
-          Key Specifications
-          </h1>
-      </button>
-      {showText && <div>
-      <p> Hello </p> </div>} */}
 
 
 
@@ -194,27 +135,3 @@ export default function Props({ imagesArray, brand, images, Features, Car, Price
     </>
   )
 }
-
-{/* <h5>Specification of {Car}</h5>
-City Mileage {Mileage} <br />
-Fuel Type  {FuelType} <br />
-Engine Displacement {EngineDisplacement} <br />
-No. of Cylinders {Cylinder} <br />
-Seating Capacity {Seat} <br />
-Body Type {BodyType} <br />
-Fuel Tank Capacity  {FuelCapacity} <br />
-Transmission Type {TransmissionType} <br />
-Max Power {MaxPower} <br />
-Max Torque {MaxTorque} <br />
-Ground Clearance Unladen {GroundClearanceUnladen} <br /> 
-<h1>Features of {Car}</h1> <br />
-          Power Steering 
-          Power Windows Front 
-          Anti Lock Braking System 
-          Air Conditioner 
-          Driver Airbag 
-          Passenger Airbag 
-          Alloy Wheels 
-Multi-function Steering Wheel
-         </div>*/}
-
