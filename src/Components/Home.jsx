@@ -22,15 +22,11 @@ export default function Home() {
       </div>
 <br />
       <div >
-        <Link to={"/Brands"} className='p-[250px] font-bold text-2xl' >All Brands</Link>
+        <Link to={"/Brands"} className='p-[250px] font-bold text-2xl ' >All Brands</Link>
         <BrandSlider/>
       </div>
      
-      <div className='flex flex-row ' >
-        <Card title={"hh"} image={L}/>
-        <Card  title={"kk"}  image={B}/>
-       
-       </div>
+      
     </div>
     
   )

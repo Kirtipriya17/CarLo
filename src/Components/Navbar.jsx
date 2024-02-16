@@ -1,6 +1,7 @@
 // components/Navbar.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
           </div>
           <div className={`md:flex flex-col md:flex-row md:items-center ${isOpen ? 'flex' : 'hidden'}`}>
             <Link to={'/'}>
-            <a href="#" className="text-gray-400  hover:text-gray-700 py-2 md:px-4 font-bold ">Home</a>
+            <a href="#" className="text-gray-400  hover:text-gray-700 py-2 md:px-4 font-bold ">Home </a>
             </Link>
             <Link to={'./About'}>
             <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold">About</a>
