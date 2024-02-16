@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <div >
       <form action=''>
-        <div className='text-white h-[100vh] flex justify-center items-center bg-cover' style={{"background":"url('../src/assets/11.jpg')",backgroundSize:"cover", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
+        <div className='text-white h-[100vh] flex justify-center items-center bg-cover ' style={{"background":"url('../src/assets/11.jpg')", backgroundSize:"cover", backgroundPosition:"center", backgroundRepeat:"no-repeat" , }}>
           <div className='bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-sm bg-opacity-30 relative'>
             <h1 className='text-4xl text-white font-bold size-25 flex justify-center'>Login</h1>
             <div className='relative my-4 m-2 p-3'>

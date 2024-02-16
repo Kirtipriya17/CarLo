@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { TbPasswordUser } from "react-icons/tb";
+import { MdDriveFileRenameOutline } from "react-icons/md";
 
 export default function Register() {
     return (
@@ -11,6 +11,12 @@ export default function Register() {
                 <div className='text-white h-[100vh] flex justify-center items-center bg-cover' style={{ "background": "url('../src/assets/11.jpg')",backgroundSize:"cover", backgroundPosition:"center", backgroundRepeat:"no-repeat"  }}>
                     <div className='bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-sm bg-opacity-30 relative'>
                         <h1 className='text-4xl text-white font-bold size-25 flex justify-left justify-evenly'>Register</h1>
+                        <div className='relative my-4 m-4 p-5'>
+                        <MdDriveFileRenameOutline />
+
+                            <input type='password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='' />
+                            <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer=focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-tanslate-y-0 peer-focus:scale-75 peer-focus:translate-y-6 '>Name</label>
+                        </div>
                         
                         <div className='relative my-4 m-5 p-5'>
                         < FaUser />
@@ -22,11 +28,7 @@ export default function Register() {
                             <input type='password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='' />
                             <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer=focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-tanslate-y-0 peer-focus:scale-75 peer-focus:translate-y-6 '>Your Password</label>
                         </div>
-                        <div className='relative my-4 m-4 p-5'>
-                        <TbPasswordUser />
-                            <input type='password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='' />
-                            <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer=focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-tanslate-y-0 peer-focus:scale-75 peer-focus:translate-y-6 '>Confirm Password</label>
-                        </div>
+                       
 
 
                         <div>
