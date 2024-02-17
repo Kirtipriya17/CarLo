@@ -1,54 +1,52 @@
-// components/RegisterPage.jsx
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FaUser } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { MdDriveFileRenameOutline } from "react-icons/md";
 
-function Register() {
-    const [formData, setFormData] = useState({
-        username: '',
-        email: '',
-        password: '',
-        confirmPassword: ''
-    });
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Add your registration logic here
-        console.log('Form submitted:', formData);
-    };
-
+export default function Register() {
     return (
-        <div className="min-h-screen bg-gray-400 flex items-center justify-center">
-            <div className="max-w-md bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-semibold text-center mb-6 hover:text-blue-400">Register</h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-4">
-                        <label htmlFor="username" className="block text-gray-700 font-bold mb-2">Username</label>
-                        <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
-                    </div>
-                    <div className="mb-4">
-                        <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email Address</label>
-                        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
-                    </div>
-                    <div className="mb-4">
-                        <label htmlFor="password" className="block text-gray-700 font-bold mb-2">Password</label>
-                        <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
-                    </div>
-                    <div className="mb-6">
-                        <label htmlFor="confirmPassword" className="block text-gray-700 font-bold mb-2">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} className="form-input w-full border-2 border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500" />
-                    </div>
-                    <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 w-full">Register</button>
-                </form>
-                <div className="text-center mt-4">
-                    <p className="text-gray-700">Already have an account? <Link to="/login" className="text-blue-500 hover:underline">Login here</Link></p>
-                </div>
-            </div>
-        </div>
-    );
-}
+        <div>
+            <form action=''>
+                <div className='text-white h-[100vh] flex justify-center items-center bg-cover' style={{ "background": "url('../src/assets/11.jpg')",backgroundSize:"cover", backgroundPosition:"center", backgroundRepeat:"no-repeat"  }}>
+                    <div className='bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-sm bg-opacity-30 relative'>
+                        <h1 className='text-4xl text-white font-bold size-25 flex justify-left justify-evenly'>Register</h1>
+                        <div className='relative my-4 m-4 p-5'>
+                        <MdDriveFileRenameOutline />
 
-export default Register;
+                            <input type='password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='' />
+                            <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer=focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-tanslate-y-0 peer-focus:scale-75 peer-focus:translate-y-6 '>Name</label>
+                        </div>
+                        
+                        <div className='relative my-4 m-5 p-5'>
+                        < FaUser />
+                            <input type='email' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='' />
+                            <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer=focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-tanslate-y-0 peer-focus:scale-75 peer-focus:translate-y-6  '>Your Email</label>
+                        </div>
+                        <div className='relative my-4 m-4 p-5'>
+                        <RiLockPasswordFill />
+                            <input type='password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='' />
+                            <label htmlFor='' className='absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer=focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-tanslate-y-0 peer-focus:scale-75 peer-focus:translate-y-6 '>Your Password</label>
+                        </div>
+                       
+
+
+                        <div>
+                            <button className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300" type='submit'>Register</button>
+                        </div>
+
+
+
+                        <span className='flex justify-center'> Already Created an Account?<Link to="Login" className='text-blue-500 m-1'>Login</Link></span>
+                    </div>
+
+
+                </div>
+                <div>
+
+                </div>
+            </form>
+
+        </div>
+    )
+}

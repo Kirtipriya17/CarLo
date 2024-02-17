@@ -28,6 +28,20 @@ import Porsche from './Pages/Brand/Porsche.jsx';
 import Volvo from './Pages/Brand/Volvo.jsx';
 
 import MahindraThar from './Pages/Mahindra/Mahindra Thar.jsx';
+import F296GTB from './Pages/Ferrari/F296GTB.jsx';
+import F8Tributo from './Pages/Ferrari/F8Tributo.jsx';
+import Carens from './Pages/Kia/Carens.jsx';
+import EV6 from './Pages/Kia/EV6.jsx';
+import Seltos from './Pages/Kia/Seltos.jsx';
+import Sonet from './Pages/Kia/Sonet.jsx';
+import DB11 from './Pages/Aston Martin/DB11.jsx';
+import DB12 from './Pages/Aston Martin/DB12.jsx';
+import Vantage from './Pages/Aston Martin/Vantage.jsx';
+import DBX from './Pages/Aston Martin/DBX.jsx';
+import FPace from './Pages/Jaguar/FPace.jsx';
+import Ftype from './Pages/Jaguar/Ftype.jsx';
+import FType from './Pages/Jaguar/Ftype.jsx';
+import IPace from './Pages/Jaguar/IPace.jsx';
 
 
 export default function App() {
@@ -65,6 +79,26 @@ export default function App() {
      <Route path='/Ferrari' element={<Ferrari/>}/>
      <Route path='/Porsche' element={<Porsche/>}/>
      <Route path='/Volvo' element={<Volvo/>}/>
+
+
+     <Route path='/F296GTB' element={<F296GTB/>}/>
+     <Route path='/F8Tributo' element={<F8Tributo/>}/>
+
+     <Route path='/Carens' element={<Carens/>}/>
+     <Route path='/EV6' element={<EV6/>}/>
+     <Route path='/Seltos' element={<Seltos/>}/>
+     <Route path='/Sonet' element={<Sonet/>}/>
+
+
+     <Route path='/DB11' element={<DB11/>}/>
+     <Route path='/DB12' element={<DB12/>}/>
+     <Route path='/Vantage' element={<Vantage/>}/>
+     <Route path='/DBX' element={<DBX/>}/>
+
+
+     <Route path='/FPace' element={<FPace/>}/>
+     <Route path='/FType' element={<FType/>}/>
+     <Route path='/IPAce' element={<IPace/>}/>
 
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
 
