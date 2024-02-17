@@ -9,7 +9,7 @@ import ReviewPage from './ReviewPage';
 export default function Home() {
   return (
     <div className='relative'>
-      <video className='bg-cover max-h-50' src={video} autoPlay loop muted />
+      <video className='bg-cover max-h-50 p-2' src={video} autoPlay loop muted />
       <div>
         <h1 className='absolute left-10 top-20 m-5 p-5 font-bold size-19 text-5xl text-gray-800 transition duration-500 ease-in-out transform hover:scale-110'>Ride in Style, Drive with Pride!</h1>
         <h2 className='absolute left-10 top-20 p-5   font-bold size-25 text-4xl text-orange-700 transition duration-500 ease-in-out transform hover:scale-110'> Unlock your journey with our cars!</h2>

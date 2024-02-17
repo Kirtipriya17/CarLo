@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { HiHome, HiOutlineInformationCircle, HiBriefcase, HiUserCircle, HiLogin, HiShoppingCart } from 'react-icons/hi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,15 +14,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-           
-              
             <h1 className="ml-2 text-gray-400 text-4xl font-bold hover:text-gray-700 transition duration-300 ease-in-out">CarLo</h1>
           </div>
           <div className="md:hidden">
             <button onClick={toggleNavbar} className="text-white focus:outline-none">
               <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 {isOpen ? (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
+                  <path d="M6 18L18 6M6 6l12 12" />
                 ) : (
                   <path d="M4 6h16M4 12h16M4 18h16" />
                 )}
@@ -31,22 +29,36 @@ const Navbar = () => {
           </div>
           <div className={`md:flex flex-col md:flex-row md:items-center ${isOpen ? 'flex' : 'hidden'} `}>
             <Link to={'/'}>
-              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out">Home </a>
+              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center">
+                <HiHome className="h-5 w-5 mr-1" /> Home
+              </a>
             </Link>
             <Link to={'./About'}>
-              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out">About</a>
+              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center">
+                <HiOutlineInformationCircle className="h-5 w-5 mr-1" /> About
+              </a>
             </Link>
             <Link to={'./Brands'}>
-              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out">Brands</a>
+              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center">
+                <HiBriefcase className="h-5 w-5 mr-1" /> Brands
+              </a>
             </Link>
             <Link to={'./Login'}>
-              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out">Login</a>
+              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center">
+                <HiLogin className="h-5 w-5 mr-1" /> Login
+              </a>
             </Link>
             <Link to={'./Register'}>
-              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out">Register</a>
+              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center">
+                <HiUserCircle className="h-5 w-5 mr-1" /> Register
+              </a>
             </Link>
-            <Link to={'./BookingPage'}>
-              <a href="#" className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out">Booking</a>
+          </div>
+          <div className="hidden md:flex items-center">
+            <Link to={'/Cart'}>
+              <button className="text-white focus:outline-none">
+                <HiShoppingCart className="h-6 w-6 fill-current" />
+              </button>
             </Link>
           </div>
         </div>
