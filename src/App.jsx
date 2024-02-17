@@ -63,73 +63,114 @@ import Spectre from './Pages/RollsRoyce/Spectre.jsx';
 import Phantom from './Pages/RollsRoyce/Phantom.jsx';
 import Dawn from './Pages/RollsRoyce/Dawn.jsx';
 import AMGA35 from './Pages/Mercedes/AMGA35.jsx';
+import IX from './Pages/BMW/IX.jsx';
+import M4 from './Pages/BMW/M4.jsx';
+import Series7 from './Pages/BMW/Series7.jsx';
+import XSM from './Pages/BMW/XSM.jsx';
+import Z4 from './Pages/BMW/Z4.jsx';
 
 
 export default function App() {
-  return (
+     return (
 
 
-   <div>
-    
-
-    <Navbar/>
-    
-    <Routes>
-     <Route path='/' element={<Home/>}/>
-      <Route path='/brands' element={<Brands/>}/>
-     <Route path='/login' element={<Login/>}/>
-     <Route path='/about' element={<About/>}/>
-     <Route path='/Register' element={<Register/>}/>
-     <Route path='/BookingPage' element={<BookingPage/>}/>
-     
-     <Route path="/cart" element={<Cart/>} />
-     
-
-     <Route path='/Tata' element={<Tata/>}/>
-     <Route path='/Maruti' element={<Maruti/>}/>
-     <Route path='/Toyota' element={<Toyota/>}/>
-     <Route path='/BMW' element={<BMW/>}/>
-     <Route path='/Mahindra' element={<Mahindra/>}/>
-     <Route path='/Audi' element={<Audi/>}/>
-     <Route path='/Kia' element={<Kia/>}/>
-     <Route path='/Jaguar' element={<Jaguar/>}/>
-     <Route path='/Hyundai' element={<Hyundai/>}/>
-     <Route path='RollsRoyce/' element={<RollsRoyce/>}/>
-     <Route path='/MercedesBenz' element={<MercedesBenz/>}/>
-     <Route path='/Lamborghini' element={<Lamborghini/>}/>
-     <Route path='/AstonMartin' element={<AstonMartin/>}/>
-     <Route path='/Ferrari' element={<Ferrari/>}/>
-     <Route path='/Porsche' element={<Porsche/>}/>
-     <Route path='/Volvo' element={<Volvo/>}/>
+          <div>
 
 
-     <Route path='/F296GTB' element={<F296GTB/>}/>
-     <Route path='/F8Tributo' element={<F8Tributo/>}/>
+               <Navbar />
 
-     <Route path='/Carens' element={<Carens/>}/>
-     <Route path='/EV6' element={<EV6/>}/>
-     <Route path='/Seltos' element={<Seltos/>}/>
-     <Route path='/Sonet' element={<Sonet/>}/>
+               <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/brands' element={<Brands />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/Register' element={<Register />} />
+                    <Route path='/BookingPage' element={<BookingPage />} />
 
-
-     <Route path='/DB11' element={<DB11/>}/>
-     <Route path='/DB12' element={<DB12/>}/>
-     <Route path='/Vantage' element={<Vantage/>}/>
-     <Route path='/DBX' element={<DBX/>}/>
+                    <Route path="/cart" element={<Cart />} />
 
 
-     <Route path='/FPace' element={<FPace/>}/>
-     <Route path='/FType' element={<FType/>}/>
-     <Route path='/IPAce' element={<IPace/>}/>
+                    <Route path='/Tata' element={<Tata />} />
+                    <Route path='/Maruti' element={<Maruti />} />
+                    <Route path='/Toyota' element={<Toyota />} />
+                    <Route path='/BMW' element={<BMW />} />
+                    <Route path='/Mahindra' element={<Mahindra />} />
+                    <Route path='/Audi' element={<Audi />} />
+                    <Route path='/Kia' element={<Kia />} />
+                    <Route path='/Jaguar' element={<Jaguar />} />
+                    <Route path='/Hyundai' element={<Hyundai />} />
+                    <Route path='RollsRoyce/' element={<RollsRoyce />} />
+                    <Route path='/MercedesBenz' element={<MercedesBenz />} />
+                    <Route path='/Lamborghini' element={<Lamborghini />} />
+                    <Route path='/AstonMartin' element={<AstonMartin />} />
+                    <Route path='/Ferrari' element={<Ferrari />} />
+                    <Route path='/Porsche' element={<Porsche />} />
+                    <Route path='/Volvo' element={<Volvo />} />
 
-     <Route path='/BoleroNeo' element={<BoleroNeo/>}/>
-     <Route path='/MahindraThar' element={<MahindraThar/>}/>
-     
 
-     
-    </Routes>
-   <Footer/>
-    
-   </div>
-  )
+                    {/* Aston Martin */}
+                    <Route path='/DB11' element={<DB11 />} />
+                    <Route path='/DB12' element={<DB12 />} />
+                    <Route path='/Vantage' element={<Vantage />} />
+                    <Route path='/DBX' element={<DBX />} />
+                    {/* BMW */}
+                    <Route path='IX' element={<IX/>}/>
+                    <Route path='M4' element={<M4/>}/>
+                    <Route path='Series7' element={<Series7/>}/>
+                    <Route path='XSM' element={<XSM/>}/>
+                    <Route path='Z4' element={<Z4/>}/>
+
+                    {/*Ferrari*/}
+                    <Route path='/F296GTB' element={<F296GTB />} />
+                    <Route path='/F8Tributo' element={<F8Tributo />} />
+                    {/* Hyundai */}
+                    <Route path='Creata' element={<Creta />} />
+                    <Route path='I20NLine' element={<I20NLine />} />
+                    <Route path='Verna' element={<Verna />} />
+
+
+                    {/* Jaguar */}
+                    <Route path='/FPace' element={<FPace />} />
+                    <Route path='/FType' element={<FType />} />
+                    <Route path='/IPAce' element={<IPace />} />
+                    {/* kia */}
+                    <Route path='/Carens' element={<Carens />} />
+                    <Route path='/EV6' element={<EV6 />} />
+                    <Route path='/Seltos' element={<Seltos />} />
+                    <Route path='/Sonet' element={<Sonet />} />
+
+                    {/* mahindra */}
+                    <Route path='/BoleroNeo' element={<BoleroNeo />} />
+                    <Route path='/MahindraThar' element={<MahindraThar />} />
+                    <Route path='ScorpioN' element={<ScorpioN />} />
+                    <Route path='XUV300' element={<XUV300 />} />
+                    <Route path='XYV700' element={<XUV700 />} />
+                    {/* Maruti Suzuki */}
+                    <Route path='Baleno' element={<Baleno />} />
+                    <Route path='Dzire' element={<Dzire />} />
+                    <Route path='Ertiga' element={<Ertiga />} />
+                    <Route path='Fronx' element={<Fronx />} />
+
+                    {/* Mercedes */}
+                    <Route path='AMGA35' element={<AMGA35 />} />
+                    {/* Rolls-Royce */}
+                    <Route path='Dawn' element={<Dawn />} />
+                    <Route path='Phantom' element={<Phantom />} />
+                    <Route path='Spectre' element={<Spectre />} />
+                    <Route path='Wraith' element={<Wraith />} />
+
+                    {/* TATA */}
+                    <Route path='Harrier' element={<Harrier />} />
+                    <Route path='Nexon' element={<Nexon />} />
+                    <Route path='Punch' element={<Punch />} />
+                    <Route path='Tiago' element={<Tiago />} />
+
+
+
+
+               </Routes>
+               <Footer />
+
+          </div>
+     )
 }

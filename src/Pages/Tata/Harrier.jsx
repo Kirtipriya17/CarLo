@@ -14,19 +14,19 @@ export default function Harrier() {
           
           <Props imagesArray={[H1,H2,H3]} 
         images={images} brand={"Tata"}
-        Car={"Tata Harrier"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
+        Car={"Tata Harrier"} Price={"Rs.15.49 Lakh"}
+        About={"The New Harrier symbolizes the unwavering spirit of young achievers in its latest avatar"}
+         Mileage={"--"}
+          FuelType={"Diesel"}
+           EngineDisplacement={"1956"}
+            Cylinder={"4"}
+             MaxPower={"167.62bhp@3750rpm"}
+              MaxTorque={"350Nm@1750-2500rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"--"}
+               FuelCapacity={"--"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"--"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -34,10 +34,10 @@ export default function Harrier() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['The slightly wider second row can easily seat three adults with ample room overall.','Strong performance owing to the more-than-adequate grunt; both inside and outside the city.']}
          />
     </div>
   )

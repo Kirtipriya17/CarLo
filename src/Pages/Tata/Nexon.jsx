@@ -15,19 +15,19 @@ export default function Nexon() {
           
           <Props imagesArray={[H1,H2,H3,H4]} 
         images={images} brand={"Tata"}
-        Car={"Tata Nexon"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
+        Car={"Tata Nexon"} Price={"Rs.8.15 Lakh"}
+        About={"New Tata Nexon scores five-star safety ratings in the GNCAP crash tests."}
+         Mileage={"24.08 kmpl"}
+          FuelType={"Diesel"}
+           EngineDisplacement={"1497 cc"}
+            Cylinder={"4"}
+             MaxPower={"113.31bhp@3750rpm"}
+              MaxTorque={"260Nm@1500-2750rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"Automatic"}
+               FuelCapacity={"44 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"208 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -35,10 +35,10 @@ export default function Nexon() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Automatic Climate Control',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Six airbags are standard, high safety rating is expected.']}
          />
     </div>
   )

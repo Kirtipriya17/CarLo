@@ -12,19 +12,19 @@ export default function Punch() {
           
           <Props imagesArray={[H1,H2]} 
         images={images} brand={"Tata"}
-        Car={"Tata Punch"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
+        Car={"Tata Punch"} Price={"Rs.6.13 Lakh"}
+        About={"Presenting Tata PUNCH, the no-compromise SUV. The epitome of class that offers a blend of sporty dynamics and tough utility."}
+         Mileage={"18.8 kmpl"}
+          FuelType={"Petrol"}
+           EngineDisplacement={"1199 cc"}
+            Cylinder={"3"}
+             MaxPower={"86.63bhp@6000rpm"}
+              MaxTorque={"115Nm@3250+/-100rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"Automatic"}
+               FuelCapacity={"37 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"187 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -34,8 +34,8 @@ export default function Punch() {
          'Passenger Airbag',	
          'Fog Lights - Front',	
          'Alloy Wheels'	,
-         'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         'Automatic Climate Control']} 
+         StandoutFeatures={['7.0-inch Harman infotainment system','Auto headlamps']}
          />
     </div>
   )
