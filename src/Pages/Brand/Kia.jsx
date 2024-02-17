@@ -15,8 +15,7 @@ export default function Kia() {
       />
        <CarCards link={"/EV6"} image={EV6} brand={"Kia"} car={"Kia EV6"} price={"Rs.60.95 - 65.95 Lakh*"} fuelType={"Diesel"}  transmission={"Automatic"}
       />
-       <CarCards link={"/"} image={h1} brand={"Kia"} car={"Kia Carnival"} price={"Rs.40 Lakh*"} fuelType={"Diesel"}   transmission={"Manual"}
-      />
+       
        <CarCards link={"/Carens"} image={Carens} brand={"Kia"} car={"Kia Carens"} price={"Rs.10.45 - 19.45 Lakh*"} fuelType={"Diesel / Petrol"} mileage={"21 "} transmission={"Automatic / Manual"}
       />
 
