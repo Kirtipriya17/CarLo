@@ -3,6 +3,8 @@ import video from '../assets/mix/v1.mp4';
 import Card from './BrandCards';
 import { Link } from 'react-router-dom';
 import BrandSlider from './BrandSlider';
+import OfferPage from './OfferPage';
+import ReviewPage from './ReviewPage';
 
 export default function Home() {
   return (
@@ -23,7 +25,12 @@ export default function Home() {
         <Link to={"/Brands"} className='p-[250px] font-bold text-2xl ' >All Brands</Link>
         <BrandSlider/>
       </div>
-     
+     <div>
+      <OfferPage/>
+     </div>
+     <div>
+      <ReviewPage/>
+     </div>
       
     </div>
     
