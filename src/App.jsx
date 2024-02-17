@@ -43,6 +43,26 @@ import FType from './Pages/Jaguar/Ftype.jsx';
 import IPace from './Pages/Jaguar/IPace.jsx';
 import CartPage from './Components/CartPage.jsx';
 import Cart from './Components/Cart.jsx';
+import BoleroNeo from './Pages/Mahindra/BoleroNeo.jsx';
+import ScorpioN from './Pages/Mahindra/ScorpioN.jsx';
+import XUV300 from './Pages/Mahindra/XUV300.jsx';
+import XUV700 from './Pages/Mahindra/XUV700.jsx';
+import Harrier from './Pages/Tata/Harrier.jsx';
+import Nexon from './Pages/Tata/Nexon.jsx';
+import Punch from './Pages/Tata/Punch.jsx';
+import Tiago from './Pages/Tata/Tiago.jsx';
+import Baleno from './Pages/Maruti Suzuki/BAleno.jsx';
+import Dzire from './Pages/Maruti Suzuki/Dzire.jsx';
+import Ertiga from './Pages/Maruti Suzuki/Ertiga.jsx';
+import Fronx from './Pages/Maruti Suzuki/Fronx.jsx';
+import Creta from './Pages/Hyundai/Creta.jsx';
+import I20NLine from './Pages/Hyundai/I20NLine.jsx';
+import Verna from './Pages/Hyundai/Verna.jsx';
+import Wraith from './Pages/RollsRoyce/Wraith.jsx';
+import Spectre from './Pages/RollsRoyce/Spectre.jsx';
+import Phantom from './Pages/RollsRoyce/Phantom.jsx';
+import Dawn from './Pages/RollsRoyce/Dawn.jsx';
+import AMGA35 from './Pages/Mercedes/AMGA35.jsx';
 
 
 export default function App() {
@@ -102,7 +122,32 @@ export default function App() {
      <Route path='/FType' element={<FType/>}/>
      <Route path='/IPAce' element={<IPace/>}/>
 
+     <Route path='/BoleroNeo' element={<BoleroNeo/>}/>
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
+     <Route path='/ScorpioN' element={<ScorpioN/>}/>
+     <Route path='/XUV300' element={<XUV300/>}/>
+     <Route path='/XUV700' element={<XUV700/>}/>
+     
+     <Route path='/Harrier' element={<Harrier/>}/>
+     <Route path='/Nexon' element={<Nexon/>}/>
+     <Route path='/Punch' element={<Punch/>}/>
+     <Route path='/Tiago' element={<Tiago/>}/>
+
+     <Route path='Baleno' element={<Baleno/>} />
+     <Route path='Fronx' element={<Fronx/>} />
+     <Route path='Ertiga' element={<Ertiga/>} />
+     <Route path='Dzire' element={<Dzire/>} />
+     
+     <Route path='Creta' element={<Creta/>} />
+     <Route path='I20NLine' element={<I20NLine/>} />
+     <Route path='Verna' element={<Verna/>} />
+
+     <Route path='Dawn' element={<Dawn/>} />
+     <Route path='Phantom' element={<Phantom/>} />
+     <Route path='Spectre' element={<Spectre/>} />
+     <Route path='Wraith' element={<Wraith/>} />
+
+     <Route path='AMGA35' element={<AMGA35/>} />
 
      
     </Routes>
