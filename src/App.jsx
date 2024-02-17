@@ -63,7 +63,6 @@ import Spectre from './Pages/RollsRoyce/Spectre.jsx';
 import Phantom from './Pages/RollsRoyce/Phantom.jsx';
 import Dawn from './Pages/RollsRoyce/Dawn.jsx';
 import AMGA35 from './Pages/Mercedes/AMGA35.jsx';
-import AddToCart from './Components/AddToCart.jsx';
 
 
 export default function App() {
@@ -125,7 +124,7 @@ export default function App() {
 
      <Route path='/BoleroNeo' element={<BoleroNeo/>}/>
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
-     <Route path='/AddToCart' element={<AddToCart/>}/>
+     
 
      
     </Routes>
