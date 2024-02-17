@@ -76,13 +76,13 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
         <div className='flex flex-col gap-4 lg:w-2/4'>
           <div>
             <span className=' text-violet-600 font-semibold'>{brand}</span>
-            <h1 className='text-3xl font-bold' value={car} onChange={(e)=>
-                setCar(e.target.value)}>{Car}</h1>
+            <h6 className='text-2xl font-semibold'>{Price}</h6>
+<input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
           </div>
           <p className='text-gray-700'>
             {About} </p>
-          <h6 className='text-2xl font-semibold' value={price} onChange={(e)=> 
-                setPrice(e.target.value)}>{Price}</h6>
+            <h6 className='text-2xl font-semibold'>{Price}</h6>
+<input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
           <div className='flex flex-row items-center gap-12'>
             <div className='flex flex-row items-center'>
               <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
@@ -101,10 +101,7 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
 <br />
 <Link to="/cart">View Cart</Link> */}
       <div >
-        <div className='border hover:border-gray-900 shadow-black transition duration-300 ease-in-out m-4 p-5 shadow-xl'>
-          <p className='font-bold'> {Car} </p>
-          <h1>{About}</h1>
-       </div>
+       
 
 
 

@@ -15,9 +15,9 @@ export default function Sonet() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Kia"}
-        Car={"Kia Sonet"} Price={"Rs.7.99 - 15.69 Lakh*"}
-        About={""}
-         Mileage={""}
+        Car={"Kia Sonet"} Price={"Rs. 7.99 Lakh"}
+        About={"The Sonet, which is the second car that Kia launched in India after they opened shop, made a solid impression in the highly competitive, sub-four-metre SUV segment. Not only did it offer segment-first features, but also set newer benchmarks when it came to styling and build quality, offering a comfortable cabin and many powertrain choices."}
+         Mileage={"24 kmpl"}
           FuelType={"Diesel"}
            EngineDisplacement={"1493 cc"}
             Cylinder={"4"}
@@ -27,7 +27,7 @@ export default function Sonet() {
               TransmissionType={"Automatic"}
                FuelCapacity={"45 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"205mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	

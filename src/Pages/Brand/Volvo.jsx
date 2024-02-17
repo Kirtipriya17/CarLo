@@ -9,7 +9,7 @@ export default function Volvo() {
       
       <CarCards link={"/S90"} image={S90} brand={"Volvo"} car={"Volvo S90"} price={"₹ 62.95 Lakh"} mileage={ "14.7"} fuelType={"Mild Hybrid(Electric + Petrol)"}   transmission={"Automatic"}
       />
-      <CarCards link={"XC60/"} image={XC60} brand={"Volvo"} car={"Volvo XC60"} price={"₹ 68.90 Lakh"} mileage={ "	12.4"} fuelType={"Mild Hybrid(Electric + Petrol)"}   transmission={"Automatic"}
+      <CarCards link={"/XC60"} image={XC60} brand={"Volvo"} car={"Volvo XC60"} price={"₹ 68.90 Lakh"} mileage={ "	12.4"} fuelType={"Mild Hybrid(Electric + Petrol)"}   transmission={"Automatic"}
       />
     
     

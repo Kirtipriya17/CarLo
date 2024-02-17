@@ -15,16 +15,16 @@ export default function IPace() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Jaguar"}
-        Car={"Jaguar I-PACE"} Price={"Rs.1.26 Cr"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
+        Car={"Jaguar I-PACE"} Price={"Rs. 1.20 Crore"}
+        About={"Jaguar deserves credit for bringing their halo EV to India. Better still, they deserve even more credit for coming up with an electric vehicle that looks the part, is fun to drive, fairly luxurious and most important of all, suitable for daily use with a long enough range and sorted dynamics."}
+         Mileage={"--"}
+          FuelType={"--"}
+           EngineDisplacement={"--"}
             Cylinder={""}
              MaxPower={"394.26bhp"}
               MaxTorque={"696Nm"} 
               Seat={"5"} 
-              TransmissionType={""}
+              TransmissionType={"--"}
                FuelCapacity={""}
                 BodyType={"SUV"} 
                 GroundClearanceUnladen={"174mm mm"}
@@ -38,7 +38,7 @@ export default function IPace() {
          'Fog Lights - Front',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Electric']}
          />
     </div>
   )

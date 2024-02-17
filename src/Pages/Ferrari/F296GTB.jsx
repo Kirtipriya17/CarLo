@@ -16,8 +16,8 @@ export default function F296GTB() {
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Ferrari"}
         Car={"Ferrari 296 GTB"} Price={"Rs.5.40 Cr"}
-        About={""}
-         Mileage={""}
+        About={"Ferrari has done a tremendous job of getting its new hybrid motor to live up to its trademark performance lineage."}
+         Mileage={"28 kmpl"}
           FuelType={"Petrol"}
            EngineDisplacement={"2992cc"}
             Cylinder={"6"}
@@ -27,10 +27,10 @@ export default function F296GTB() {
               TransmissionType={"Automatic"}
                FuelCapacity={"65 Litres"}
                 BodyType={"Coupe"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"170 mm"}
 
          Features={['Air Conditioner','Fog Lights -Front','Alloy Wheels']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Engaging drive']}
          />
     </div>
   )

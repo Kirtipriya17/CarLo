@@ -15,9 +15,9 @@ export default function FType() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Jaguar"}
-        Car={"Jaguar F-Type"} Price={"Rs.1 - 1.56 Cr"}
-        About={""}
-         Mileage={""}
+        Car={"Jaguar F-Type"} Price={"Rs. 99.98 Lakh"}
+        About={"The Jaguar F-Type has a sensual design with sleek lines and a coupe silhouette. It comes with multiple engine options and trim levels, so there’s an F-Type for everyone. Plus, the 5.0-litre V8 offers blistering performance."}
+         Mileage={"12.3 kmpl"}
           FuelType={"Petrol"}
            EngineDisplacement={"5000cc"}
             Cylinder={"8"}
@@ -38,7 +38,7 @@ export default function FType() {
          'Fog Lights - Front',	
          'Alloy Wheels'	,
          'Automatic Climate Control']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Blistering performance']}
          />
     </div>
   )

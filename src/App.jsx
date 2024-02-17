@@ -34,7 +34,6 @@ import Carens from './Pages/Kia/Carens.jsx';
 import EV6 from './Pages/Kia/EV6.jsx';
 import Seltos from './Pages/Kia/Seltos.jsx';
 import Sonet from './Pages/Kia/Sonet.jsx';
-import DB11 from './Pages/Aston Martin/DB11.jsx';
 import DB12 from './Pages/Aston Martin/DB12.jsx';
 import Vantage from './Pages/Aston Martin/Vantage.jsx';
 import DBX from './Pages/Aston Martin/DBX.jsx';
@@ -124,7 +123,6 @@ export default function App() {
                     <Route path='/RS5' element={<RS5 />} />
 
                     {/* Aston Martin */}
-                    <Route path='/DB11' element={<DB11 />} />
                     <Route path='/DB12' element={<DB12 />} />
                     <Route path='/Vantage' element={<Vantage />} />
                     <Route path='/DBX' element={<DBX />} />

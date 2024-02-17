@@ -15,9 +15,9 @@ export default function Seltos() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Kia"}
-        Car={"Kia Seltos"} Price={"Rs.10.90 - 20.30 Lakh"}
-        About={""}
-         Mileage={""}
+        Car={"Kia Seltos"} Price={"Rs.10.90Lakh"}
+        About={"The Kia Seltos is a better-rounded package than the pre-facelift model. It's also a good choice among the eight other vehicles in this mid-size SUV segment. This car gets a new turbo-petrol engine option, new segment-first features, Level 2 ADAS, and cosmetic changes."}
+         Mileage={"19.1 kmpl"}
           FuelType={"Diesel"}
            EngineDisplacement={"1493cc"}
             Cylinder={"4"}
@@ -27,7 +27,7 @@ export default function Seltos() {
               TransmissionType={"Automatic"}
                FuelCapacity={"50Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"190mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -38,7 +38,7 @@ export default function Seltos() {
          'Automatic Climate Control',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Kia Seltos comes with six distinct interior choices']}
          />
     </div>
   )

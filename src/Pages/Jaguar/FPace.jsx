@@ -17,7 +17,7 @@ export default function FPace() {
           <Props imagesArray={[H1,H2,H3,H4,H5,H6]} 
         images={images} brand={"Jaguar"}
         Car={"Jaguar F-Pace"} Price={"Rs.78.90 Lakh"}
-        About={""}
+        About={"The Jaguar F-Pace has improved in many ways and as a result, is a better proposition than it has ever been. It’s stunning looking, more refined, way nicer on the inside and with the addition of new-age tech, smarter as well. For the power-hungry, Jaguar now offers the F-Pace SVR."}
          Mileage={"19.3 kmpl"}
           FuelType={"Diesel"}
            EngineDisplacement={"1997cc"}
@@ -28,7 +28,7 @@ export default function FPace() {
               TransmissionType={"Automatic"}
                FuelCapacity={"60 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"213 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -39,7 +39,7 @@ export default function FPace() {
          'Fog Lights - Front',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Cabin look and feel']}
          />
     </div>
   )

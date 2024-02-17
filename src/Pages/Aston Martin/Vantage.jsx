@@ -14,20 +14,19 @@ export default function Vantage() {
           
           <Props imagesArray={[H1,H2,H3,H4]} 
         images={images} brand={"Aston Martin"}
-        Car={"Aston Martin Vantage"} Price={"Rs.2.95 Cr"}
-        About={""}
-         Mileage={""}
-          FuelType={"Petrol"}
-           EngineDisplacement={"3998cc"}
-            Cylinder={"8"}
-             MaxPower={"502.88bhp@6000rpm"}
-              MaxTorque={"675Nm@2000-5000rpm"} 
-              Seat={"2"} 
-              TransmissionType={"Manual"}
-               FuelCapacity={"73 Litres"}
-                BodyType={"Convertible"} 
-                GroundClearanceUnladen={""}
-
+        Car={"Aston Martin Vantage"} Price={"Rs. 3.50 Cr"}
+        About={"The new-gen Vantage is a huge leap over the previous model. It is now more engaging to drive, thanks to the potent powertrain, and the cabin is more ergonomic and practical. Add to it the blistering performance, and this Aston is capable of putting a smile on your face every time. "}
+         Mileage={"8.6 kmpl"}
+         FuelType={"Petrol"}
+         EngineDisplacement={"3998cc"}
+          Cylinder={"8"}
+           MaxPower={"502.88bhp@6000rpm"}
+            MaxTorque={"675Nm@2000-5000rpm"} 
+            Seat={"2"} 
+            TransmissionType={"Manual"}
+             FuelCapacity={"73 Litres"}
+              BodyType={"Convertiblee"} 
+              GroundClearanceUnladen={"122 mm"}
          Features={['Power Steering',	
          'Power Windows Front',	
          'Anti Lock Braking System',	
@@ -37,7 +36,7 @@ export default function Vantage() {
          'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Extremely fast']}
          />
     </div>
   )

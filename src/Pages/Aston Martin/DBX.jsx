@@ -15,9 +15,9 @@ export default function DBX() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Aston Martin"}
-        Car={"Aston Martin DBX"} Price={"Rs.3.82 - 4.63 Cr*"}
-        About={""}
-         Mileage={""}
+        Car={"Aston Martin DBX"} Price={"Rs. 3.82 Crore"}
+        About={"A practical, fast and luxurious attempt for the elite from the Aston Martin stable."}
+         Mileage={"10.1 kmpl"}
           FuelType={"Petrol"}
            EngineDisplacement={"3982cc"}
             Cylinder={"8"}
@@ -38,7 +38,7 @@ export default function DBX() {
          'Fog Lights - Front',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Handling, fun to drive']}
          />
     </div>
   )

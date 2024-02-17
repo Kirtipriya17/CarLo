@@ -17,8 +17,8 @@ export default function F8Tributo() {
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Ferrari"}
         Car={"Ferrari F8 Tributo"} Price={"Rs.4.02 Cr"}
-        About={""}
-         Mileage={""}
+        About={"The Ferrari F8 Tributo is a great amalgamation of a powerful mid-engine V8 motor and outstanding handling that’s equally at home on the race track and switchbacks. And as its name suggests, it pays tribute to the 'Prancing Horse' logo in the best way possible."}
+         Mileage={"7.8 kmpl"}
           FuelType={"Petrol"}
            EngineDisplacement={"3902cc"}
             Cylinder={"8"}
@@ -28,7 +28,7 @@ export default function F8Tributo() {
               TransmissionType={"Automatic"}
                FuelCapacity={"200 Litres"}
                 BodyType={"Coupe"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"205 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -39,7 +39,7 @@ export default function F8Tributo() {
          'Automatic Climate Control',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Outstanding engine performance and handling']}
          />
     </div>
   )

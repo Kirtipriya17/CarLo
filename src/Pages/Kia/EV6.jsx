@@ -17,19 +17,19 @@ export default function EV6() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5,H6,H7]} 
         images={images} brand={"Kia"}
-        Car={"Kia EV6"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
+        Car={"Kia EV6"} Price={"Rs. 60.95 Lakh"}
+        About={"The Kia EV6 looks to be an extremely impressive product from Kia Motors and there is no doubt it has all the potential to be a halo EV product."}
+         Mileage={"21kmpl"}
+          FuelType={"--"}
+           EngineDisplacement={"--"}
+            Cylinder={"--"}
              MaxPower={"320.55bhp"}
               MaxTorque={"605Nm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"--"}
+               FuelCapacity={"--"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"--"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -40,7 +40,7 @@ export default function EV6() {
          'Fog Lights - Front',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Performance is immediate, 0-100kmph in 5.2 seconds.']}
          />
     </div>
   )

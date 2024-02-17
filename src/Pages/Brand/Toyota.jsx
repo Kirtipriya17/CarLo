@@ -14,7 +14,7 @@ export default function Toyota() {
       <CarCards link={"/FortunerLegender"} image={FortunerLegende} brand={"Toyota"} car={"Toyota Fortuner Legender"} price={"₹ 33.43 - 51.44 Lakh"} mileage={ "10 - 14.6 "} fuelType={"Diesel"}  transmission={"Manual, Automatic (TC)"}
       />
      
-      <CarCards link={"/LandCruiser"} image={LandCruiser} brand={"Toyota"} car={"Toyota Land Cruiser"} price={"₹ 2.10 crore"} mileage={ "	22.3 - 30.61 "} fuelType={"Diesel"}  transmission={"Automatic"}
+      <CarCards link={"/LandCruiser"} image={LandCruiser} brand={"Toyota"} car={"Toyota Land Cruiser 300"} price={"₹ 2.10 crore"} mileage={ "	22.3 - 30.61 "} fuelType={"Diesel"}  transmission={"Automatic"}
       />
     </div>
   )

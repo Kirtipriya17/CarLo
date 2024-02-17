@@ -16,8 +16,8 @@ export default function Carens() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5,H6]} 
         images={images} brand={"Kia"}
-        Car={"Kia Carens"} Price={"Rs.10.45 - 19.45 Lakh"}
-        About={""}
+        Car={"Kia Carens"} Price={"Rs.10.45Lakh"}
+        About={"The Kia Carens is a game changer in its segment. It's available over a wide price bracket with an assortment of powertrains, a slew of modern features, and an eye-catching level of practicality."}
          Mileage={"21 kmpl"}
           FuelType={"Diesel"}
            EngineDisplacement={"1493cc"}
@@ -28,7 +28,7 @@ export default function Carens() {
               TransmissionType={"Automatic"}
                FuelCapacity={"45 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"	195mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -39,7 +39,7 @@ export default function Carens() {
          'Automatic Climate Control',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['12.5-inch instrumentation is standard across the range.','Light controls, excellent visibility and auto gearbox ease city driving.']}
          />
     </div>
   )

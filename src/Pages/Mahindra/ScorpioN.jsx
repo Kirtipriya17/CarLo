@@ -14,8 +14,8 @@ export default function ScorpioN() {
     <div>
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
-        images={images} brand={"Kia"}
-        Car={"Kia EV6"} Price={"Rs.60.95 - 65.95 Lakh"}
+        images={images} brand={"Mahindra"}
+        Car={"Mahindra Scorpio N"} Price={"Rs.60.95 - 65.95 Lakh"}
         About={""}
          Mileage={""}
           FuelType={""}
