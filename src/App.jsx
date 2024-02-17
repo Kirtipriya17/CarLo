@@ -39,9 +39,10 @@ import DB12 from './Pages/Aston Martin/DB12.jsx';
 import Vantage from './Pages/Aston Martin/Vantage.jsx';
 import DBX from './Pages/Aston Martin/DBX.jsx';
 import FPace from './Pages/Jaguar/FPace.jsx';
-import Ftype from './Pages/Jaguar/Ftype.jsx';
 import FType from './Pages/Jaguar/Ftype.jsx';
 import IPace from './Pages/Jaguar/IPace.jsx';
+import CartPage from './Components/CartPage.jsx';
+import Cart from './Components/Cart.jsx';
 
 
 export default function App() {
@@ -60,7 +61,8 @@ export default function App() {
      <Route path='/about' element={<About/>}/>
      <Route path='/Register' element={<Register/>}/>
      <Route path='/BookingPage' element={<BookingPage/>}/>
-   
+     
+     <Route path="/cart" element={<Cart/>} />
      
 
      <Route path='/Tata' element={<Tata/>}/>
