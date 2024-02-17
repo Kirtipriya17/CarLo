@@ -10,11 +10,21 @@ const Footer = () => {
             <h1 className="text-gray-400 text-4xl font-bold hover:text-gray-700">CarLo</h1>
           </div>
           <div className="md:flex">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4"><FaFacebook className="h-6 w-6" /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4"><FaTwitter className="h-6 w-6" /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4"><FaInstagram className="h-6 w-6" /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4"><FaLinkedin className="h-6 w-6" /></a>
-            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4"><FaPinterest className="h-6 w-6" /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4">
+              <FaFacebook className="h-6 w-6 transition duration-300 ease-in-out hover:text-blue-500 hover:scale-110" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4">
+              <FaTwitter className="h-6 w-6 transition duration-300 ease-in-out hover:text-blue-500 hover:scale-110" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4">
+              <FaInstagram className="h-6 w-6 transition duration-300 ease-in-out hover:text-blue-500 hover:scale-110" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4">
+              <FaLinkedin className="h-6 w-6 transition duration-300 ease-in-out hover:text-blue-500 hover:scale-110" />
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 py-2 md:px-4">
+              <FaPinterest className="h-6 w-6 transition duration-300 ease-in-out hover:text-blue-500 hover:scale-110" />
+            </a>
           </div>
         </div>
         {/* Additional section */}
