@@ -43,6 +43,7 @@ import FType from './Pages/Jaguar/Ftype.jsx';
 import IPace from './Pages/Jaguar/IPace.jsx';
 import CartPage from './Components/CartPage.jsx';
 import Cart from './Components/Cart.jsx';
+import AddToCart from './Components/AddToCart.jsx';
 
 
 export default function App() {
@@ -102,6 +103,7 @@ export default function App() {
      <Route path='/FType' element={<FType/>}/>
      <Route path='/IPAce' element={<IPace/>}/>
 
+     <Route path='/BoleroNeo' element={<BoleroNeo/>}/>
      <Route path='/MahindraThar' element={<MahindraThar/>}/>
 
      
