@@ -66,8 +66,20 @@ import AMGA35 from './Pages/Mercedes/AMGA35.jsx';
 import IX from './Pages/BMW/IX.jsx';
 import M4 from './Pages/BMW/M4.jsx';
 import Series7 from './Pages/BMW/Series7.jsx';
-import XSM from './Pages/BMW/XSM.jsx';
 import Z4 from './Pages/BMW/Z4.jsx';
+import FortunerLegender from './Pages/Toyota/FortunerLegender.jsx';
+import LandCruiser from './Pages/Toyota/LandCruiser.jsx';
+import Vellfire from './Pages/Toyota/Vellfire.jsx';
+import RS5 from './Pages/Audi/RS5.jsx';
+import Q8 from './Pages/Audi/Q8.jsx';
+import ETron from './Pages/Audi/ETron.jsx';
+import Urus5 from './Pages/Lamborghini/Urus5.jsx';
+import HuracanSTO from './Pages/Lamborghini/HuracanSTO.jsx';
+import Roma from './Pages/Ferrari/Roma.jsx';
+import P718 from './Pages/Porsche/P718.jsx';
+import Taycan from './Pages/Porsche/Taycan.jsx';
+import XC60 from './Pages/Volvo/XC60.jsx';
+import S90 from './Pages/Volvo/S90.jsx';
 
 
 export default function App() {
@@ -106,7 +118,10 @@ export default function App() {
                     <Route path='/Ferrari' element={<Ferrari />} />
                     <Route path='/Porsche' element={<Porsche />} />
                     <Route path='/Volvo' element={<Volvo />} />
-
+{/* Audi */}
+                    <Route path='/ETron' element={<ETron />} />
+                    <Route path='/Q8' element={<Q8 />} />
+                    <Route path='/RS5' element={<RS5 />} />
 
                     {/* Aston Martin */}
                     <Route path='/DB11' element={<DB11 />} />
@@ -117,12 +132,12 @@ export default function App() {
                     <Route path='IX' element={<IX/>}/>
                     <Route path='M4' element={<M4/>}/>
                     <Route path='Series7' element={<Series7/>}/>
-                    <Route path='XSM' element={<XSM/>}/>
                     <Route path='Z4' element={<Z4/>}/>
 
                     {/*Ferrari*/}
                     <Route path='/F296GTB' element={<F296GTB />} />
                     <Route path='/F8Tributo' element={<F8Tributo />} />
+                    <Route path='/Roma' element={<Roma />} />
                     {/* Hyundai */}
                     <Route path='Creata' element={<Creta />} />
                     <Route path='I20NLine' element={<I20NLine />} />
@@ -164,6 +179,19 @@ export default function App() {
                     <Route path='Nexon' element={<Nexon />} />
                     <Route path='Punch' element={<Punch />} />
                     <Route path='Tiago' element={<Tiago />} />
+{/* toyota */}
+<Route path='FortunerLegender' element={<FortunerLegender/>}/>
+<Route path='LandCruiser' element={<LandCruiser/>}/>
+<Route path='Vellfire' element={<Vellfire/>}/>
+
+<Route path='HuracanSTO' element={<HuracanSTO/>}/>
+<Route path='Urus5' element={<Urus5/>}/>
+
+<Route path='P718' element={<P718/>}/>
+<Route path='Taycan' element={<Taycan/>}/>
+
+<Route path='S90' element={<S90/>}/>
+<Route path='XC60' element={<XC60/>}/>
 
 
 

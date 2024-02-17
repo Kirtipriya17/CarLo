@@ -1,19 +1,20 @@
 import React from 'react'
 import CarCards from '../../Components/CarCards'
-import h1 from '../../assets/2.jpg'
+
+import Vellfire from '../../assets/Images/toyota/VELLFIRE/1.jpg'
+import FortunerLegende from '../../assets/Images/toyota/FORTUNER LEGENDER/1.jpg'
+import LandCruiser from '../../assets/Images/toyota/LAND CRUISER/1.jpg'
 
 export default function Toyota() {
   return (
     <div>
-       <CarCards link={"/"} image={h1} brand={"Toyota"} car={"Toyota Vellfire"} price={"₹ 6.86 - 10.00 Lakh"} mileage={ "	22.3 - 30.61 "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
+       <CarCards link={"/Vellfire"} image={Vellfire} brand={"Toyota"} car={"Toyota Vellfire"} price={"₹ 6.86 - 10.00 Lakh"} mileage={ "	22.3 - 30.61 "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
       />
-      <CarCards link={"/"} image={h1} brand={"Toyota"} car={"Toyota Camri"} price={"₹ 11.14 - 20.19 Lakh"} mileage={ "19.39 - 27.97"} fuelType={"Mild Hybrid(Electric + Petrol), CNG, Hybrid (Electric + Petrol)"}  transmission={"Manual, Automatic (TC), Automatic (e-CVT)"}
+      
+      <CarCards link={"/FortunerLegender"} image={FortunerLegende} brand={"Toyota"} car={"Toyota Fortuner Legender"} price={"₹ 33.43 - 51.44 Lakh"} mileage={ "10 - 14.6 "} fuelType={"Diesel"}  transmission={"Manual, Automatic (TC)"}
       />
-      <CarCards link={"/"} image={h1} brand={"Toyota"} car={"Toyota Fortuner Legender"} price={"₹ 33.43 - 51.44 Lakh"} mileage={ "10 - 14.6 "} fuelType={"Diesel"}  transmission={"Manual, Automatic (TC)"}
-      />
-      <CarCards link={"/"} image={h1} brand={"Toyota"} car={"Toyota Hilux"} price={"₹ 30.41 - 37.89 Lakh"} mileage={ "15 - 20  "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
-      />
-      <CarCards link={"/"} image={h1} brand={"Toyota"} car={"Toyota Land Cruiser"} price={"₹ 2.10 crore"} mileage={ "	22.3 - 30.61 "} fuelType={"Diesel"}  transmission={"Automatic"}
+     
+      <CarCards link={"/LandCruiser"} image={LandCruiser} brand={"Toyota"} car={"Toyota Land Cruiser"} price={"₹ 2.10 crore"} mileage={ "	22.3 - 30.61 "} fuelType={"Diesel"}  transmission={"Automatic"}
       />
     </div>
   )
