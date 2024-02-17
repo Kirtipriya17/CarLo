@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 
 import '../style.css'
+import CartPage from './CartPage';
+import { Link } from 'react-router-dom';
 
 export default function Props({ imagesArray, brand, Features, Car, Price, About, StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
 
@@ -8,12 +10,45 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [amount, setAmount] = useState(1);
+  // const [cartItems, setCartItems] = useState([]);
   const handleImageClick = (index) => {
     setActiveIndex(index);
   };
 
+  // const addToCart = () => {
+  //   const newItem = { car: Car, price: Price };
+  //   setCartItems([...cartItems, newItem]);
+  // };
 
 
+  const [car, setCar] = useState()
+  const [price, setPrice] = useState()
+
+  function addToCart(e){
+    e.preventDefault();
+    const body = {
+      car, price
+    }
+    fetch("http://localhost:5000/cart",{
+      method:"POST",
+      headers:{
+          "Content-Type":"application/json"
+      },
+      body:JSON.stringify(body)
+  }).then(response => {
+      if(response.status === 201){
+          alert("Response  successful")
+          return  response.json()
+      }else{
+          alert("Response was not successful")
+          return response.json()
+          // alert(response.body.message)
+          // throw new Error(response)
+      }
+  }).then(json => alert(json.message.msg))
+  .catch(error => alert(error))
+
+  }
 
   return (
     <>
@@ -41,18 +76,20 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
         <div className='flex flex-col gap-4 lg:w-2/4'>
           <div>
             <span className=' text-violet-600 font-semibold'>{brand}</span>
-            <h1 className='text-3xl font-bold'>{Car}</h1>
+            <h1 className='text-3xl font-bold' value={car} onChange={(e)=>
+                setCar(e.target.value)}>{Car}</h1>
           </div>
           <p className='text-gray-700'>
             {About} </p>
-          <h6 className='text-2xl font-semibold'>{Price}</h6>
+          <h6 className='text-2xl font-semibold' value={price} onChange={(e)=> 
+                setPrice(e.target.value)}>{Price}</h6>
           <div className='flex flex-row items-center gap-12'>
             <div className='flex flex-row items-center'>
               <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
               <span className='py-4 px-6 rounded-lg'>{amount}</span>
               <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
             </div>
-            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full' onClick={addToCart} >Add to Cart</button>
           </div>
         </div>
       </div>
@@ -60,7 +97,9 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
 
 
       <br />
-
+      {/* <CartPage cartItems={cartItems} />
+<br />
+<Link to="/cart">View Cart</Link> */}
       <div >
         <div className='border hover:border-gray-900 shadow-black transition duration-300 ease-in-out m-4 p-5 shadow-xl'>
           <p className='font-bold'> {Car} </p>
