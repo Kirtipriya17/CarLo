@@ -85,8 +85,6 @@ export default function App() {
 
 
           <div>
-
-
                <Navbar />
 
                <Routes>

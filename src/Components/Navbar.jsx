@@ -9,6 +9,7 @@ import {
   HiShoppingCart,
 } from "react-icons/hi";
 import { AiFillAccountBook } from "react-icons/ai";
+import Search from "./Search";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -91,7 +92,10 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center">
-            <form class="max-w-md mx-auto">
+          <div className=""><Search />
+            </div>
+          
+            {/* <form class="max-w-md mx-auto">
               <label
                 for="default-search"
                 class="mb-2 text-sm font-medium text-gray-100 sr-only dark:text-white"
@@ -124,7 +128,7 @@ const Navbar = () => {
                   required
                 />
               </div>
-            </form>
+            </form> */}
 
             <Link to={"/Cart"}>
               <button className="text-white focus:outline-none ">
