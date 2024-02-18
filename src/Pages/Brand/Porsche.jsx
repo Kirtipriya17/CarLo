@@ -9,7 +9,7 @@ export default function Porsche() {
     <div>Porsche
       <CarCards link={"/Taycan"} image={Taycan} brand={"Porsche"} car={"Porsche Taycan"} price={"₹ 1.61 - 2.44 crore"} fuelType={"Electric"}  
       />
-      <CarCards link={"/P718"} image={P718} brand={"Porsche"} car={"Porsche 718"} price={"₹ 1.48 - 2.74 crore"} mileage={"7.5 - 14.5 "} fuelType={"Petrol"}  transmission={" Automatic (DCT), Manual"}
+      <CarCards link={"/P718"} image={P718} brand={"Porsche"} car={"Porsche 718"} price={"₹ 1.48 - 2.74 crore"} mileage={"7.5 - 14.5km/l "} fuelType={"Petrol"}  transmission={" Automatic (DCT), Manual"}
       />
     
 
