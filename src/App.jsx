@@ -77,6 +77,7 @@ import P718 from './Pages/Porsche/P718.jsx';
 import Taycan from './Pages/Porsche/Taycan.jsx';
 import XC60 from './Pages/Volvo/XC60.jsx';
 import S90 from './Pages/Volvo/S90.jsx';
+import PrivacyPolicyPage from './Components/PrivacyPolicyPage.jsx';
 
 
 export default function App() {
@@ -95,6 +96,7 @@ export default function App() {
                     <Route path='/about' element={<About />} />
                     <Route path='/Register' element={<Register />} />
                     <Route path='/BookingPage' element={<BookingPage />} />
+                    <Route path='/Privacypolicypage' element={<PrivacyPolicyPage />} />
 
                     <Route path="/cart" element={<Cart />} />
 

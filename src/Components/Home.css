@@ -1,0 +1,26 @@
+.hero-text{
+    position: absolute;
+    top: 450px;
+left: 350px;
+    color: white;
+  text-align: center;
+}
+
+.hero-text .text-top{
+    font-size: 80px;
+    font-weight: 900;
+    font-family: sans-serif;
+   
+}
+
+
+.hero-text .text-bottom{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-text .hero-btn{
+position: relative;
+top: 30px;
+
+}
