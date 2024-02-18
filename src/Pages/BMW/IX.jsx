@@ -13,19 +13,19 @@ export default function IX() {
           
           <Props imagesArray={[H1,H2,H3,H4]} 
         images={images} brand={"BMW"}
-        Car={"BMW IX"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={""}
-              MaxTorque={""} 
+        Car={"BMW IX"} Price={"Rs.1.21 Cr"}
+        About={"This BMW oozes great quality interiors, it feels dynamically sorted and the range is quite good too. The iX is certainly a convincing effort from BMW's EV stable."}
+         Mileage={"425 km/charge"}
+          FuelType={"Electric"}
+           EngineDisplacement={"--"}
+            Cylinder={"--"}
+             MaxPower={"321.84bhp"}
+              MaxTorque={"630Nm"} 
               Seat={"5"} 
               TransmissionType={""}
-               FuelCapacity={""}
+               FuelCapacity={"--"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"202mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -33,10 +33,10 @@ export default function IX() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Tech laden']}
          />
     </div>
   )

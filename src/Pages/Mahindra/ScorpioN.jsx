@@ -15,19 +15,19 @@ export default function ScorpioN() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Mahindra"}
-        Car={"Mahindra Scorpio N"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
-              Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+        Car={"Mahindra Scorpio N"} Price={"Rs. 13.60 Lakh"}
+        About={"If you are looking for a tough ladder-frame SUV which is easy to drive in the city and at the same time, can take on bad roads with ease, the Scorpio-N is certainly a good choice."}
+         Mileage={"15 kmpl"}
+          FuelType={"Diesel"}
+           EngineDisplacement={"2198 cc"}
+            Cylinder={"4"}
+             MaxPower={"172.45bhp@3500rpm"}
+              MaxTorque={"400Nm@1750-2750rpm"} 
+              Seat={"6,7"} 
+              TransmissionType={"Automatic"}
+               FuelCapacity={"57Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"187 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -35,10 +35,10 @@ export default function ScorpioN() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+        ' Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Sunroof','Driver MID','12-Speaker 3D Sony Sound System']}
          />
     </div>
   )

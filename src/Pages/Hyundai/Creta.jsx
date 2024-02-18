@@ -15,19 +15,19 @@ export default function Creta() {
           
           <Props imagesArray={[H1,H2,H3,H4]} 
         images={images} brand={"Hyundai "}
-        Car={"Hyundai Creta"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
+        Car={"Hyundai Creta"} Price={"Rs. 11.00 Lakh"}
+        About={"The new Hyundai CRETA is equipped with home-to-car with Alexa and innovative Hyundai Bluelink app gives you the power to control your car from the comfort of your home or office."}
+         Mileage={"18.4 kmpl"}
+          FuelType={"Petrol"}
+           EngineDisplacement={"1482 cc"}
+            Cylinder={"4"}
+             MaxPower={"157.57bhp@5500rpm"}
+              MaxTorque={"253Nm@1500-3500rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"Automatic"}
+               FuelCapacity={"50 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"190 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -35,10 +35,10 @@ export default function Creta() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Powertrains have adequate grunt for most driving situations.','Hyundai spares/service availability and resale value. ']}
          />
     </div>
   )

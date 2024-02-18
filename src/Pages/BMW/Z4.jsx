@@ -14,19 +14,19 @@ export default function Z4() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"BMW"}
-        Car={"BMW Z4"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={""}
-              MaxTorque={""} 
-              Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
-                BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+        Car={"BMW Z4"} Price={"Rs.90.90 Lakh*"}
+        About={"The BMW Z4 excites with its sleek open-air styling, tech-laden interiors, and as a daily driver. It doesn't, however, excite as much with its overall dynamics."}
+         Mileage={"12.09 kmpl"}
+          FuelType={"Petrol"}
+           EngineDisplacement={"2998 cc"}
+            Cylinder={"6"}
+             MaxPower={"335bhp@5000-6500rpm"}
+              MaxTorque={"500Nm@1600-4500rpm"} 
+              Seat={"2"} 
+              TransmissionType={"Automatic"}
+               FuelCapacity={"52 Litres"}
+                BodyType={"Convertible"} 
+                GroundClearanceUnladen={"114 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -34,10 +34,10 @@ export default function Z4() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Performance from the motor  ']}
          />
     </div>
   )

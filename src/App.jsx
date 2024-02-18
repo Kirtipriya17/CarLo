@@ -50,17 +50,15 @@ import Harrier from './Pages/Tata/Harrier.jsx';
 import Nexon from './Pages/Tata/Nexon.jsx';
 import Punch from './Pages/Tata/Punch.jsx';
 import Tiago from './Pages/Tata/Tiago.jsx';
-import Baleno from './Pages/Maruti Suzuki/BAleno.jsx';
+import Baleno from './Pages/Maruti Suzuki/Baleno.jsx';
 import Dzire from './Pages/Maruti Suzuki/Dzire.jsx';
 import Ertiga from './Pages/Maruti Suzuki/Ertiga.jsx';
 import Fronx from './Pages/Maruti Suzuki/Fronx.jsx';
 import Creta from './Pages/Hyundai/Creta.jsx';
 import I20NLine from './Pages/Hyundai/I20NLine.jsx';
 import Verna from './Pages/Hyundai/Verna.jsx';
-import Wraith from './Pages/RollsRoyce/Wraith.jsx';
 import Spectre from './Pages/RollsRoyce/Spectre.jsx';
 import Phantom from './Pages/RollsRoyce/Phantom.jsx';
-import Dawn from './Pages/RollsRoyce/Dawn.jsx';
 import AMGA35 from './Pages/Mercedes/AMGA35.jsx';
 import IX from './Pages/BMW/IX.jsx';
 import M4 from './Pages/BMW/M4.jsx';
@@ -167,10 +165,8 @@ export default function App() {
                     {/* Mercedes */}
                     <Route path='AMGA35' element={<AMGA35 />} />
                     {/* Rolls-Royce */}
-                    <Route path='Dawn' element={<Dawn />} />
                     <Route path='Phantom' element={<Phantom />} />
                     <Route path='Spectre' element={<Spectre />} />
-                    <Route path='Wraith' element={<Wraith />} />
 
                     {/* TATA */}
                     <Route path='Harrier' element={<Harrier />} />

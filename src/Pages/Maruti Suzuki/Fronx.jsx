@@ -14,19 +14,19 @@ export default function Fronx() {
           
           <Props imagesArray={[H1,H2,H3,H4]} 
         images={images} brand={"Maruti Suzuki "}
-        Car={"Maruti Suzuki Fronx"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
+        Car={"Maruti Suzuki Fronx"} Price={"Rs. 7.51 Lakh"}
+        About={"Designed to plug the gap between the Baleno and Brezza, the new Fronx has quite a lot going for it. Namely the stance, a long list of features, a mature ride and a refined set of capable motors. Yet another winner from Maruti!"}
+         Mileage={"20 kpml"}
+          FuelType={"Petrol"}
+           EngineDisplacement={"998 cc"}
+            Cylinder={"3"}
+             MaxPower={"98.69bhp@5500rpm"}
+              MaxTorque={"147.6Nm@2000-4500rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"Automatic"}
+               FuelCapacity={"37 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"190 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -34,10 +34,10 @@ export default function Fronx() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Automatic Climate Controlt',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Heads-up display','360-degree camera','Wireless Android Auto and Apple CarPlay']}
          />
     </div>
   )

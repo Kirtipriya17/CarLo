@@ -12,19 +12,19 @@ export default function Series7() {
           
           <Props imagesArray={[H1,H2,H3]} 
         images={images} brand={"BMW"}
-        Car={"BMW 7 Series"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={""}
-              MaxTorque={""} 
+        Car={"BMW 7 Series"} Price={"Rs. 1.82 Crore"}
+        About={"The new 7 Series is a great leap from what it was. A rather radical transformation. It's also thoroughly impressive in all manners conceivable."}
+         Mileage={"13 kmpl"}
+          FuelType={"Diesel"}
+           EngineDisplacement={"2993 cc"}
+            Cylinder={"6"}
+             MaxPower={"375.48bhp@5200-6250rpm"}
+              MaxTorque={"520Nm@1850-5000rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+              TransmissionType={"Automatic"}
+               FuelCapacity={"74 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"135 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -35,7 +35,7 @@ export default function Series7() {
          'Fog Lights - Front',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Soothing cabin experience']}
          />
     </div>
   )

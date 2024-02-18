@@ -14,19 +14,19 @@ export default function Baleno() {
           
           <Props imagesArray={[H1,H2,H3,H4]} 
         images={images} brand={"Maruti Suzuki "}
-        Car={"Maruti Suzuki Baleno"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
+        Car={"Maruti Suzuki Baleno"} Price={"Rs. 6.66 Lakh"}
+        About={"With the new Maruti Suzuki Baleno, the company have listened to their customers and accordingly made plenty of important changes that have transformed the car delightfully. The new Baleno is more comfortable, drives better and gets many new important features."}
+         Mileage={"19 kmpl"}
+          FuelType={"Petrol"}
+           EngineDisplacement={"1197 cc"}
+            Cylinder={"4"}
+             MaxPower={"88.50bhp@6000rpm"}
+              MaxTorque={"113Nm@4400rpm"} 
               Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
-                BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+              TransmissionType={"Automatic"}
+               FuelCapacity={"37 Litres"}
+                BodyType={"Hatchback"} 
+                GroundClearanceUnladen={"170mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -34,10 +34,10 @@ export default function Baleno() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Automatic Climate Control',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={[' 360 Degree Camera','Heads-up Display','9-inch SmartPlay Pro Infotainment System']}
          />
     </div>
   )

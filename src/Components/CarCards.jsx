@@ -17,10 +17,10 @@ export default function CarCards({ link,image,brand,car,price,fuelType,mileage,t
                         <h6 className='text-2xl font-semibold'>{price}</h6>
 
                         <p className="text-gray-600 mb-4">
-                            {fuelType}  • {mileage} kmpl  • {transmission}
+                            {fuelType}  • {mileage}   • {transmission}
                         </p>
                         <button className="bg-violet-800 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded">
-                            Add To Cart
+                            Know More
                         </button>
                     </div>
                 </div>

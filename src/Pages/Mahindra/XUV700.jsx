@@ -15,19 +15,19 @@ export default function XUV700() {
           
           <Props imagesArray={[H1,H2,H3,H4,H5]} 
         images={images} brand={"Mahindra"}
-        Car={"Mahindra XUV700"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
-              Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
+        Car={"Mahindra XUV700"} Price={"Rs. 13.99 Lakh"}
+        About={"Looking at the prices, Mahindra is clearly elevating the value co-efficient with the new XUV700. Be it features, space, comfort, safety, or even performance, the XUV700 manages to deliver on all fronts with aplomb. "}
+         Mileage={"16.57 kmpl"}
+          FuelType={"Diesel"}
+           EngineDisplacement={"2198 cc"}
+            Cylinder={"4"}
+             MaxPower={"182.38bhp@3500rpm"}
+              MaxTorque={"450Nm@1750-2800rpm"} 
+              Seat={"5,6,7"} 
+              TransmissionType={"Automatic"}
+               FuelCapacity={"60 Litres"}
                 BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+                GroundClearanceUnladen={"200 mm"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -35,10 +35,10 @@ export default function XUV700() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Lane keep assist','Sony sound system','2 x 10.25 inch infotainment screens']}
          />
     </div>
   )

@@ -15,19 +15,19 @@ export default function Spectre() {
           
           <Props imagesArray={[H1,H2]} 
         images={images} brand={"Rolls-Royce"}
-        Car={"Rolls-Royce Spectre"} Price={"Rs.60.95 - 65.95 Lakh"}
-        About={""}
-         Mileage={""}
-          FuelType={""}
-           EngineDisplacement={""}
-            Cylinder={""}
-             MaxPower={"320.55bhp"}
-              MaxTorque={"605Nm"} 
-              Seat={"5"} 
-              TransmissionType={""}
-               FuelCapacity={""}
-                BodyType={"SUV"} 
-                GroundClearanceUnladen={""}
+        Car={"Rolls-Royce Spectre"} Price={"Rs.7.50 Cr*"}
+        About={"For the price, the Spectre is likely to be the most expensive electric car available worldwide. Nevertheless, with no direct competitor yet, this two-door coupe enjoys a niche spot in the Indian market."}
+         Mileage={"9.5 Kmpl"}
+          FuelType={"Electric"}
+           EngineDisplacement={"--"}
+            Cylinder={"--"}
+             MaxPower={"576.63bhp"}
+              MaxTorque={"900Nm"} 
+              Seat={"4"} 
+              TransmissionType={"--"}
+               FuelCapacity={"--"}
+                BodyType={"Coupe"} 
+                GroundClearanceUnladen={"--"}
 
          Features={['Power Steering',	
          'Power Windows Front',	
@@ -35,10 +35,10 @@ export default function Spectre() {
          'Air Conditioner',
          'Driver Airbag	',
          'Passenger Airbag',	
-         'Fog Lights - Front',	
+         'Engine Start Stop Button',	
          'Alloy Wheels'	,
          'Multi-function Steering Wheel']} 
-         StandoutFeatures={['']}
+         StandoutFeatures={['Outrageous power. ']}
          />
     </div>
   )
