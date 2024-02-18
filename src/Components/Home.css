@@ -1,26 +1,69 @@
-.hero-text{
-    position: absolute;
-    top: 450px;
-left: 350px;
-    color: white;
-  text-align: center;
+/* ===============  NAVBAR =============== */
+
+.navbar-top {
+  background-color: rgba(0, 0, 0, 0.324) !important;
 }
 
-.hero-text .text-top{
-    font-size: 80px;
-    font-weight: 900;
-    font-family: sans-serif;
-   
+.navbar-text {
+  font-size: 19px;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.hero-text {
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  color: white;
+  
+
+}
+
+.hero-text .text-top {
+  font-size: 80px;
+  font-weight: 900;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.hero-text .text-bottom {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.hero-text .hero-btn {
+  position: relative;
+  top: 50px;
+  letter-spacing: 3px;
+  color:  orange !important;
+  height: 80px !important;
+  border-radius: none !important;
 }
 
 
-.hero-text .text-bottom{
-    font-size: 50px;
-    font-weight: 700;
+.abt-top{
+  background: url(../assets/new2.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+
+}
+.abt-top .abt-h{
+  color: white;
+  font-size: 45px;
+  padding-top: 200px;
+  padding-left: 20px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.hero-text .hero-btn{
-position: relative;
-top: 30px;
-
+.abt-top .abt-para{
+  color: white;
+  font-size: 22px;
+  padding-left: 20px;
+  text-align: justify;
+  
 }

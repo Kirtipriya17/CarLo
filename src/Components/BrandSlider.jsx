@@ -34,8 +34,8 @@ export default function BrandSlider() {
 
     return (
         <div>
-            <div className="container m-auto w-3/4 ">
-                <Slider {...settings} className='p-4  flex flex-col gap-3'>
+            <div className="container m-auto w-3/4 rounded-2xl ">
+                <Slider {...settings} className='p-4  flex flex-col gap-3 '>
                     
              <div>       <Cards title="Maruti Suzuki" image={Maruti} link="/Maruti"/> </div>
              <div>     <Cards title="Toyota" image={Toyota} link="/Toyota"/> </div>

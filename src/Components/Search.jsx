@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Select from 'react-select'
 
+
 const option = [
     { value: "Brands", label: "All Brands" },
     { value: "AstonMartin", label: "Aston Martin" },
@@ -86,7 +87,7 @@ export default function Search() {
     return (
         <div>
 
-            <div className='text-green-900 w-[200px] justify'>
+            <div className='text-green-900  w-[200px] justify'>
                 <Select
                     options={option} value={selectedOption} onChange={handleChange}
                 />

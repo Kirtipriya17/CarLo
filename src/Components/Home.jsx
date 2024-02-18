@@ -8,14 +8,17 @@ import ReviewPage from './ReviewPage';
 import OfferPagee from './OfferPagee';
 import './Home.css';
 
+
 export default function Home() {
   return (
     <><div className='relative'>
-      <video className='bg-cover max-h-100 max-w-100% brightness-75' src={video} autoPlay loop muted />
+      <video className='bg-cover max-h-100 max-w-100% brightness-50' src={video} autoPlay loop muted />
       <div className='hero-text'>
-      <h1 className='text-top' >Drive Your Dreams!!</h1>
-      <h2 className='text-bottom'>Buy your Dream Car Today !!!!</h2>
-      <Link to="/Brands" className="bg-transparent border-2 hero-btn border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white text-xl font-bold py-3 px-20 rounded-full transition duration-300 ease-in-out">Explore</Link>
+      <h1 className='text-top' >SPEED YOUR WINGS</h1>
+      <p className='text-bottom'>Find your car which give you wings</p>
+    
+      <Link to="/Brands" className="bg-transparent  hero-btn  hover:bg-blue-500 text-blue-500 hover:text-white text-xl font-bold py-5 px-20  rounded-sm transition duration-300 ease-in-out">Explore  </Link>
+
     </div>
 
 

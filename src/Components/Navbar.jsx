@@ -1,3 +1,4 @@
+import './Home.css';
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -18,11 +19,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent fixed w-full z-50 backdrop-filter backdrop-blur-lg ">
+    <nav className="bg-transparent fixed w-full z-50 backdrop-filter  navbar-top ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="ml-2 text-gray-400 text-4xl font-bold hover:text-gray-700 transition duration-300 ease-in-out">
+            <h1 className="ml-2 text-white text-4xl font-bold hover:text-gray-700 transition duration-300 ease-in-out">
               CarLo
             </h1>
           </div>
@@ -52,7 +53,7 @@ const Navbar = () => {
             <Link to={"/"}>
               <a
                 href="#"
-                className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
+                className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
               >
                 <HiHome className="h-5 w-5 mr-1" /> Home
               </a>
@@ -60,7 +61,7 @@ const Navbar = () => {
             <Link to={"./About"}>
               <a
                 href="#"
-                className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
+                className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
               >
                 <HiOutlineInformationCircle className="h-5 w-5 mr-1" /> About
               </a>
@@ -68,7 +69,7 @@ const Navbar = () => {
             <Link to={"./Brands"}>
               <a
                 href="#"
-                className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
+                className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
               >
                 <HiBriefcase className="h-5 w-5 mr-1" /> Brands
               </a>
@@ -76,7 +77,7 @@ const Navbar = () => {
             <Link to={"./Login"}>
               <a
                 href="#"
-                className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
+                className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
               >
                 <HiLogin className="h-5 w-5 mr-1" /> Login
               </a>
@@ -84,17 +85,18 @@ const Navbar = () => {
             <Link to={"./Register"}>
               <a
                 href="#"
-                className="text-gray-400 hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
+                className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
               >
                 <HiUserCircle className="h-5 w-5 mr-1" /> Register
               </a>
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center">
-          <div className=""><Search />
+          <div className="hidden   md:flex items-center">
+            <div className="me-2  ">
+              <Search />
             </div>
-          
+
             {/* <form class="max-w-md mx-auto">
               <label
                 for="default-search"
