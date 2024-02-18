@@ -9,13 +9,13 @@ export default function Tata() {
   return (
     <div>
       
-      <CarCards link={"/Punch"} image={Punch} brand={"Tata"} car={"Tata Punch"} price={"₹ 6.13 - 10.20 Lakh"} mileage={ "18.8 - 26.99 "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
+      <CarCards link={"/Punch"} image={Punch} brand={"Tata"} car={"Tata Punch"} price={"₹ 6.13 - 10.20 Lakh"} mileage={ "18.8 - 26.99km/l "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
       />
-      <CarCards link={"/Nexon"} image={Nexon} brand={"Tata"} car={"Tata Nexon"} price={"₹ 8.15 - 15.60 Lakh"} mileage={ "17.01 - 24.08 "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
+      <CarCards link={"/Nexon"} image={Nexon} brand={"Tata"} car={"Tata Nexon"} price={"₹ 8.15 - 15.60 Lakh"} mileage={ "17.01 - 24.08km/l "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
       />
-      <CarCards link={"/Tiago"} image={Tiago} brand={"Tata"} car={"Tata Tigor"} price={"₹ 6.30 - 9.55 Lakh"} mileage={ "19.2 - 26.4 "} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
+      <CarCards link={"/Tiago"} image={Tiago} brand={"Tata"} car={"Tata Tigor"} price={"₹ 6.30 - 9.55 Lakh"} mileage={ "19.2 - 26.4km/l"} fuelType={"Petrol, CNG"}  transmission={"Manual, Automatic (AMT)"}
       />
-      <CarCards link={"/Harrier"} image={Harrier} brand={"Tata"} car={"Tata Harrier"} price={"₹ 15.49 - 26.44 Lakh"} mileage={ "	14.6 - 16.8 "} fuelType={"Diesel"}  transmission={"Manual, Automatic (AMT)"}
+      <CarCards link={"/Harrier"} image={Harrier} brand={"Tata"} car={"Tata Harrier"} price={"₹ 15.49 - 26.44 Lakh"} mileage={ "	14.6 - 16.8km/l"} fuelType={"Diesel"}  transmission={"Manual, Automatic (AMT)"}
       />
     </div>
   )
