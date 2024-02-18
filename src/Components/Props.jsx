@@ -76,8 +76,8 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
         <div className='flex flex-col gap-4 lg:w-2/4'>
           <div>
             <span className=' text-violet-600 font-semibold'>{brand}</span>
-            <h6 className='text-2xl font-semibold'>{Price}</h6>
-<input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
+            <h6 className='text-2xl font-semibold'>{Car}</h6>
+<input type="text" value={car} onChange={(e) => setCar(e.target.value)} />
           </div>
           <p className='text-gray-700'>
             {About} </p>
