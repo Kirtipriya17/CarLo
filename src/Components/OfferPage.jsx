@@ -1,8 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import image1 from '../assets/k.jpg';
+import image1 from '../assets/8.jpg';
 import image2 from '../assets/q.jpg';
 import image3 from '../assets/8.jpg';
+import image4 from '../assets/q.jpg';
+
 
 export default function OfferPage() {
   // Assuming you have some way to get offer details based on the offer ID
@@ -18,8 +20,14 @@ export default function OfferPage() {
     images: [
       image1,
       image2,
-      image3
-    ]
+      image3,
+      image4,
+      
+    ] 
+    
+    
+     
+    
   };
 
   return (

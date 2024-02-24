@@ -44,12 +44,11 @@ export default function Home() {
         < BrandSlider />
       </div><div>
         <OfferPage />
-      </div><div>
-        <ReviewPage />
       </div>
       <div>
-      <OfferPagee/>
-        </div>
+        <ReviewPage />
+      </div>
+     
         </>
       
     

@@ -39,7 +39,14 @@
   color:  orange !important;
   height: 80px !important;
   border-radius: none !important;
+}.slider-1 {
+  border-radius: 10px;
+  size: 10px;
+  box-shadow: none !important;
+  margin: 10px;
+  width: 75% !important;
 }
+
 
 
  
@@ -74,7 +81,6 @@
   border-radius: sm !important;
   transition-duration: 0s; 
   text-shadow: 0cm;
-  font-size: 1.2rem; /* Increase the font size on hover */
-  transition: font-size 0.3s ease; /* Add a smooth transition */
+  
 }
 
