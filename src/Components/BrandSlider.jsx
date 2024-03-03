@@ -24,35 +24,35 @@ import Ferrari from "../assets/Brands/Ferrari.png"
 
 export default function BrandSlider() {
     const settings = {
-       
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        
+        autoplay: true, // Set autoplay to true
+        autoplaySpeed: 1000, // Set the autoplay speed in milliseconds
+        loop:true,
     };
 
     return (
         <div>
             <div className="container m-auto w-3/4 rounded-2xl slider  ">
                 <Slider {...settings} className='p-4  flex flex-col gap-3 '>
-                    
-             <div>       <Cards title="Maruti Suzuki" image={Maruti} link="/Maruti"/> </div>
-             <div>     <Cards title="Toyota" image={Toyota} link="/Toyota"/> </div>
-             <div>     <Cards title="BMW" image={BMW} link="/BMW"/> </div>
-             <div>    <Cards title="Mahindra" image={Mahindra} link="/Mahindra"/> </div>
-             <div>    <Cards title="Audi" image={Audi} link="/Audi"/> </div>
-             <div>    <Cards title="Kia" image={Kia} link="/Kia"/> </div>
-             <div>    <Cards title="Rolls Royce" image={RollsRoyce} link="/RollsRoyce"/> </div>
-             <div>    <Cards title="Merceres-Benz" image={Mercedes} link="/MercedesBenz"/> </div>
-             <div>    <Cards title="Lamborghini" image={Lamborghini} link="/Lamborghini"/> </div>
-             <div>   <Cards title="Aston Martin" image={AstonMartin} link="/AstonMartin"/> </div>
-             <div>   <Cards title="Ferrari" image={Ferrari} link="/Ferrari"/> </div> 
-             <div>    <Cards title="Jaguar" image={Jaguar} link="/Jaguar"/> </div>
-             <div>  <Cards title="Porsche" image={Porsche} link="/Porsche"/> </div>
-             <div>    <Cards title="Hyundai" image={Hyundai} link="/Hyundai"/> </div>
-             <div> <Cards title="Volvo" image={Volvo} link="/Volvo"/> </div>
-             <div >   <Cards title="Tata" image={Tata} link="/Tata"/> </div>
+                    <div><Cards title="Maruti Suzuki" image={Maruti} link="/Maruti" /></div>
+                    <div><Cards title="Toyota" image={Toyota} link="/Toyota" /></div>
+                    <div><Cards title="BMW" image={BMW} link="/BMW" /></div>
+                    <div><Cards title="Mahindra" image={Mahindra} link="/Mahindra" /></div>
+                    <div><Cards title="Audi" image={Audi} link="/Audi" /></div>
+                    <div><Cards title="Kia" image={Kia} link="/Kia" /></div>
+                    <div><Cards title="Rolls Royce" image={RollsRoyce} link="/RollsRoyce" /></div>
+                    <div><Cards title="Merceres-Benz" image={Mercedes} link="/MercedesBenz" /></div>
+                    <div><Cards title="Lamborghini" image={Lamborghini} link="/Lamborghini" /></div>
+                    <div><Cards title="Aston Martin" image={AstonMartin} link="/AstonMartin" /></div>
+                    <div><Cards title="Ferrari" image={Ferrari} link="/Ferrari" /></div>
+                    <div><Cards title="Jaguar" image={Jaguar} link="/Jaguar" /></div>
+                    <div><Cards title="Porsche" image={Porsche} link="/Porsche" /></div>
+                    <div><Cards title="Hyundai" image={Hyundai} link="/Hyundai" /></div>
+                    <div><Cards title="Volvo" image={Volvo} link="/Volvo" /></div>
+                    <div><Cards title="Tata" image={Tata} link="/Tata" /></div>
                 </Slider>
             </div>
         </div>
