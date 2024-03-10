@@ -19,40 +19,21 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
   //   const newItem = { car: Car, price: Price };
   //   setCartItems([...cartItems, newItem]);
   // };
+  const [showMessage, setShowMessage] = useState(false);
 
+  const handleClick = () => {
+    // Set showMessage to true when the button is clicked
+    setShowMessage(true);
 
-  const [car, setCar] = useState()
-  const [price, setPrice] = useState()
+    // Hide the message after 3 seconds
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 500);
+  };
 
-  function addToCart(e){
-    e.preventDefault();
-    const body = {
-      car, price
-    }
-    fetch("http://localhost:5000/cart",{
-      method:"POST",
-      headers:{
-          "Content-Type":"application/json"
-      },
-      body:JSON.stringify(body)
-  }).then(response => {
-      if(response.status === 201){
-          alert("Response  successful")
-          return  response.json()
-      }else{
-          alert("Response was not successful")
-          return response.json()
-          // alert(response.body.message)
-          // throw new Error(response)
-      }
-  }).then(json => alert(json.message.msg))
-  .catch(error => alert(error))
-
-  }
 
   return (
     <>
-      
       
       
       <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
@@ -77,25 +58,25 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
           <div>
             <span className=' text-violet-600 font-semibold'>{brand}</span>
             <h6 className='text-2xl font-semibold'>{Car}</h6>
-<input type="text" value={car} onChange={(e) => setCar(e.target.value)} />
           </div>
-          <p className='text-gray-700'>
-            {About} </p>
+          <p className='text-gray-700'> {About} </p>
             <h6 className='text-2xl font-semibold'>{Price}</h6>
-<input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
           <div className='flex flex-row items-center gap-12'>
-            <div className='flex flex-row items-center'>
-              <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
-              <span className='py-4 px-6 rounded-lg'>{amount}</span>
-              <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
-            </div>
-            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full' onClick={addToCart} >Add to Cart</button>
+            
+            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'  onClick={handleClick} >Add to Cart </button>
+             
+             <Link to={"/BookingPage"}>
+            <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'> BookNow</button>
+             </Link>
           </div>
+          {/* Display the message when showMessage is true */}
+      {showMessage &&  <p className='text-black text-2xl font-semibold'>  Item Added to Cart</p>}
         </div>
       </div>
       </div>
 
-
+      
+     
       <br />
       {/* <CartPage cartItems={cartItems} />
 <br />
