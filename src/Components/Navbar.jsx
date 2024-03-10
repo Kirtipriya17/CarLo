@@ -8,9 +8,11 @@ import {
   HiUserCircle,
   HiLogin,
   HiShoppingCart,
+  HiCalendar,
 } from "react-icons/hi";
 import { AiFillAccountBook } from "react-icons/ai";
 import Search from "./Search";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -58,7 +60,7 @@ const Navbar = () => {
                 <HiHome className="h-5 w-5 mr-1" /> Home
               </a>
             </Link>
-            <Link to={"./About"}>
+            <Link to={"/About"}>
               <a
                 href="#"
                 className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
@@ -66,7 +68,7 @@ const Navbar = () => {
                 <HiOutlineInformationCircle className="h-5 w-5 mr-1" /> About
               </a>
             </Link>
-            <Link to={"./Brands"}>
+            <Link to={"/Brands"}>
               <a
                 href="#"
                 className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
@@ -74,7 +76,7 @@ const Navbar = () => {
                 <HiBriefcase className="h-5 w-5 mr-1" /> Brands
               </a>
             </Link>
-            <Link to={"./Login"}>
+            <Link to={"/Login"}>
               <a
                 href="#"
                 className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
@@ -82,12 +84,21 @@ const Navbar = () => {
                 <HiLogin className="h-5 w-5 mr-1" /> Login
               </a>
             </Link>
-            <Link to={"./Register"}>
+            <Link to={"/Register"}>
               <a
                 href="#"
                 className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
               >
                 <HiUserCircle className="h-5 w-5 mr-1" /> Register
+              </a>
+            </Link>
+            {/* Add Link to Booking Page */}
+            <Link to={"/BookingPage"}>
+              <a
+                href="#"
+                className="text-gray-700 navbar-text hover:text-gray-700 py-2 md:px-4 font-bold transition duration-300 ease-in-out flex items-center"
+              >
+                <HiCalendar className="h-5 w-5 mr-1" /> Booking
               </a>
             </Link>
           </div>
