@@ -45,9 +45,7 @@ export default function Home() {
       </div><div>
         <OfferPage />
       </div>
-      <div>
-        <ReviewPage />
-      </div>
+      
      
         </>
       

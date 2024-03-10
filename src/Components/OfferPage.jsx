@@ -4,7 +4,8 @@ import image1 from '../assets/8.jpg';
 import image2 from '../assets/q.jpg';
 import image3 from '../assets/8.jpg';
 import image4 from '../assets/q.jpg';
-
+import image5 from '../assets/q.jpg';
+import image6 from '../assets/q.jpg';
 
 export default function OfferPage() {
   // Assuming you have some way to get offer details based on the offer ID
@@ -22,11 +23,11 @@ export default function OfferPage() {
       image2,
       image3,
       image4,
+      image5,
+      image6,
       
     ] 
-    
-    
-     
+  
     
   };
 

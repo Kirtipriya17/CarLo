@@ -15,8 +15,6 @@
   top: 400px;
   left: 50px;
   color: white;
-  
-
 }
 
 .hero-text .text-top {
@@ -36,10 +34,11 @@
   position: relative;
   top: 50px;
   letter-spacing: 3px;
-  color:  orange !important;
+  color: orange !important;
   height: 80px !important;
   border-radius: none !important;
-}.slider-1 {
+}
+.slider-1 {
   border-radius: 10px;
   size: 10px;
   box-shadow: none !important;
@@ -47,11 +46,7 @@
   width: 75% !important;
 }
 
-
-
- 
-
-.hero1{
+.hero1 {
   position: absolute;
   top: 200px;
   left: 50px;
@@ -59,29 +54,61 @@
   font-size: 80px;
   font-weight: 800;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+
   /* color: white;
   font-size: 45px;
   padding-top: 200px;
   padding-left: 20px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif; */
-
 }
-.hero2{
-  font-weight:600;
+.hero2 {
+  font-weight: 600;
   color: rgb(77, 17, 17);
 }
-.button-1{
-  position:absolute;
-  top: 450px;;
+.button-1 {
+  position: absolute;
+  top: 450px;
   letter-spacing: 3px;
   color: rgb(163, 117, 117) !important;
   height: 70px !important;
   border-radius: sm !important;
-  transition-duration: 0s; 
+  transition-duration: 0s;
   text-shadow: 0cm;
-  
+}
+.wel {
+  position: absolute;
+  top: 250px;
+  left: 1000px !important;
+
+  /* margin-left: 1000px; */
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: rgb(176, 147, 147);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 400px;
+  background-color: rgba(76, 71, 71, 0.096);
+  height: 250px;
+  padding: 12px;
+  padding-top: 15px;
+  border-radius: 20px;
 }
 
+.about-img{
+  height: 1000px;
+  width: 100%;
+}
+
+.abt-section{
+  background: url("../assets/new2.jpg");
+height: 900px;
+width: 100%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
 
