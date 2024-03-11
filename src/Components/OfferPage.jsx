@@ -1,11 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import image1 from '../assets/8.jpg';
-import image2 from '../assets/q.jpg';
-import image3 from '../assets/8.jpg';
-import image4 from '../assets/q.jpg';
-import image5 from '../assets/q.jpg';
-import image6 from '../assets/q.jpg';
+import image2 from '../assets/7.jpg';
+import image3 from '../assets/9.jpg';
+import image4 from '../assets/D.jpg';
+import image5 from '../assets/k.jpg';
+import image6 from '../assets/p.jpg';
 
 export default function OfferPage() {
   // Assuming you have some way to get offer details based on the offer ID
@@ -13,11 +13,7 @@ export default function OfferPage() {
   
   // Dummy offer data
   const offerData = {
-    id: 1,
-    title: "Special Offer!",
-    description: "Get 20% off on all luxury cars. Limited time offer.",
-    validUntil: "2024-03-31",
-    terms: "Offer valid only on selected models. Cannot be combined with other offers.",
+   
     images: [
       image1,
       image2,
@@ -33,7 +29,7 @@ export default function OfferPage() {
 
   return (
     <div className="container mx-auto mt-10">
-      <h1 className="text-3xl font-bold mb-4">Offer Details</h1>
+      <h1 className="text-3xl font-bold mb-4">Gallery</h1>
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold mb-2">{offerData.title}</h2>
         <p className="text-gray-700 mb-4">{offerData.description}</p>

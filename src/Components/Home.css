@@ -78,18 +78,18 @@
 }
 .wel {
   position: absolute;
-  top: 250px;
+  top: 40px;
   left: 1000px !important;
 
   /* margin-left: 1000px; */
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   line-height: 30px;
   color: rgb(176, 147, 147);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 450;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 400px;
-  background-color: rgba(76, 71, 71, 0.096);
+  background-color: rgba(107, 80, 80, 0.096);
   height: 250px;
   padding: 12px;
   padding-top: 15px;
@@ -112,3 +112,13 @@ background-size: cover;
 
 }
 
+.bp-1{
+  background: url("../assets/L.jpg") ;
+ 
+  height: 900px;
+  width: 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
