@@ -23,6 +23,7 @@ export default function CarCards({ link,image,brand,car,price,fuelType,mileage,t
                             Know More
                         </button>
                     </div>
+                    
                 </div>
 
             </Link>

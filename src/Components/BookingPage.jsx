@@ -1,65 +1,99 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { MdDriveEta } from "react-icons/md"; // Import car icon
+import React, { useState } from 'react';
+import { MdDriveEta } from "react-icons/md";
 
 export default function Booking() {
-    const [carModel, setCarModel] = useState(""); // State to store car model
-    const [pickupDate, setPickupDate] = useState(""); // State to store pickup date
-    const [returnDate, setReturnDate] = useState(""); // State to store return date
-    const [name, setName] = useState(""); // State to store user's name
-    const [email, setEmail] = useState(""); // State to store user's email
-    const [password, setPassword] = useState(""); // State to store user's password
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [dob, setDob] = useState("");
+    const [email, setEmail] = useState("");
+    const [address, setAddress] = useState("");
+    const [pin, setPin] = useState("");
+    const [city, setCity] = useState("");
+    const [state, setState] = useState("");
+    const [pickupDate, setPickupDate] = useState("");
+    const [modelNo, setModelNo] = useState("");
+    const [bookingError, setBookingError] = useState(null);
 
     function handleBooking(e) {
         e.preventDefault();
-        // You can implement your booking logic here
-        console.log("Booking details:", { carModel, pickupDate, returnDate, name, email, password });
+
+        // Simple validation
+        if (!firstName || !lastName || !dob || !email || !address || !pin || !city || !state || !pickupDate || !modelNo) {
+            setBookingError("Please fill in all fields.");
+            return;
+        }
+
+        // Your booking logic goes here
+
+        console.log("Booking details:", {
+            firstName,
+            lastName,
+            dob,
+            email,
+            address,
+            pin,
+            city,
+            state,
+            pickupDate,
+            modelNo
+        });
     }
 
     return (
-        <div>
-            <form onSubmit={handleBooking} action=''>
-                <div className='text-white h-[100vh] flex justify-center items-center bg-cover' style={{ "background": "url('../src/assets/11.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
-                    <div className='bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-sm bg-opacity-30 relative'>
-                        <h1 className='text-4xl text-white font-bold size-25 flex justify-left justify-evenly'>Car Booking</h1>
-                        <div className='relative my-4 m-4 p-5'>
-                            <MdDriveEta /> {/* Display car icon */}
-                            <input type='text' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='Car Model'
-                                value={carModel}
-                                onChange={(e) => setCarModel(e.target.value)} />
-                        </div>
-                        <div className='relative my-4 m-5 p-5'>
-                            <input type='date' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='Pickup Date'
-                                value={pickupDate}
-                                onChange={(e) => setPickupDate(e.target.value)} />
-                        </div>
-                        <div className='relative my-4 m-4 p-5'>
-                            <input type='date' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='Return Date'
-                                value={returnDate}
-                                onChange={(e) => setReturnDate(e.target.value)} />
-                        </div>
-                        <div className='relative my-4 m-4 p-5'>
-                            <input type='text' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='Your Name'
-                                value={name}
-                                onChange={(e) => setName(e.target.value)} />
-                        </div>
-                        <div className='relative my-4 m-5 p-5'>
-                            <input type='email' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='Your Email'
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)} />
-                        </div>
-                        <div className='relative my-4 m-4 p-5'>
-                            <input type='password' className='block w-72 py-2.3 px-0 text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus-text-white focus-border-blue-600 peer' placeholder='Your Password'
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)} />
-                        </div>
-                        <div>
-                            <button className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300" type='submit'>Book Now</button>
-                        </div>
-                    
+        
+        <div className="min-h-screen flex justify-left items-center bg-gray-100 mt-15 "> {/* Added mt-8 for margin from top */}
+            <form onSubmit={handleBooking} className="bg-white shadow-md rounded px-20 pt-10 pb-8 mb-4 transition-transform duration-300 hover:scale-105 m-20">
+                <div className="mb-4">
+                    <h1 className="text-2xl font-bold mb-4">Car Booking</h1>
+                    {bookingError && <p className="text-red-500 text-xs italic">{bookingError}</p>}
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                    <div>
+                        <label htmlFor="firstName" className="block text-gray-700 text-sm font-bold mb-2">First Name</label>
+                        <input type="text" id="firstName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="lastName" className="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+                        <input type="text" id="lastName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="dob" className="block text-gray-700 text-sm font-bold mb-2">Date of Birth</label>
+                        <input type="date" id="dob" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" value={dob} onChange={(e) => setDob(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                        <input type="email" id="email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="address" className="block text-gray-700 text-sm font-bold mb-2">Address</label>
+                        <input type="text" id="address" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="pin" className="block text-gray-700 text-sm font-bold mb-2">PIN Code</label>
+                        <input type="text" id="pin" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="PIN Code" value={pin} onChange={(e) => setPin(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="city" className="block text-gray-700 text-sm font-bold mb-2">City</label>
+                        <input type="text" id="city" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="City" value={city} onChange={(e) => setCity(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="state" className="block text-gray-700 text-sm font-bold mb-2">State</label>
+                        <input type="text" id="state" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="State" value={state} onChange={(e) => setState(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="pickupDate" className="block text-gray-700 text-sm font-bold mb-2">Pickup Date</label>
+                        <input type="date" id="pickupDate" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" value={pickupDate} onChange={(e) => setPickupDate(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="modelNo" className="block text-gray-700 text-sm font-bold mb-2">Model Number</label>
+                        <input type="text" id="modelNo" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Model Number" value={modelNo} onChange={(e) => setModelNo(e.target.value)} />
                     </div>
                 </div>
+                <div className="mt-6">
+                    <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Book Now</button>
+                </div>
             </form>
+            
         </div>
     )
 }
