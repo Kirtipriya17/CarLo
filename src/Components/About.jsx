@@ -1,6 +1,4 @@
 import React from "react";
-import image from "../assets/new4.jpg";
-
 import { Link } from "react-router-dom";
 
 export default function About() {

@@ -26,9 +26,7 @@ export default function Register() {
             } else {
                 alert("Response was not successful")
                 return response.json()
-                // alert(response.body.message)
-                // throw new Error(response)
-            }
+                 }
         }).then(json => alert(json.message))
             .catch(error => alert(error))
 

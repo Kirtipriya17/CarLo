@@ -29,19 +29,12 @@ export default function Login() {
           navigation("/MahindraThar")
 
         })
-
-        //  localStorage.setItem("userToken",)
-
-        // return  response.json()
       } else {
         alert("Response was not successful")
         response.json().then(json => {
           alert(json.message)
         })
 
-        // return response.json()
-        // alert(response.body.message)
-        // throw new Error(response)
       }
     }).catch(error => alert(error))
 

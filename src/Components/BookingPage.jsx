@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MdDriveEta } from "react-icons/md";
 import './Home.css';
 
 
@@ -19,25 +18,13 @@ export default function Booking() {
     function handleBooking(e) {
         e.preventDefault();
 
-        // Simple validation
         if (!firstName || !lastName || !dob || !email || !address || !pin || !city || !state || !pickupDate || !modelNo) {
             setBookingError("Please fill in all fields.");
             return;
         }
 
-        // Your booking logic goes here
-
         console.log("Booking details:", {
-            firstName,
-            lastName,
-            dob,
-            email,
-            address,
-            pin,
-            city,
-            state,
-            pickupDate,
-            modelNo
+            firstName,lastName, dob, email, address, pin,  city,state,  pickupDate, modelNo
         });
     }
 

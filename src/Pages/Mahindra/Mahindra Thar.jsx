@@ -13,10 +13,7 @@ export default function MahindraThar() {
    H1,H2,H3,H4,H5,H6
   ];
   return (
-    <div>
-      {/* <AddToCartButton/>
-      <ShoppingCart/> */}
-      <div>
+    <div><div>
 
 {/* <div className="container mx-auto">
   <Slider images={images} />

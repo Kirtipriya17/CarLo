@@ -1,7 +1,6 @@
 import React, {  useState } from 'react'
 
 import '../style.css'
-import CartPage from './CartPage';
 import { Link } from 'react-router-dom';
 
 export default function Props({ imagesArray, brand, Features, Car, Price, About, StandoutFeatures, Mileage, FuelType, EngineDisplacement, Cylinder, Seat, FuelCapacity, MaxPower, MaxTorque, TransmissionType, BodyType, GroundClearanceUnladen })
@@ -10,22 +9,15 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [amount, setAmount] = useState(1);
-  // const [cartItems, setCartItems] = useState([]);
   const handleImageClick = (index) => {
     setActiveIndex(index);
   };
 
-  // const addToCart = () => {
-  //   const newItem = { car: Car, price: Price };
-  //   setCartItems([...cartItems, newItem]);
-  // };
   const [showMessage, setShowMessage] = useState(false);
 
   const handleClick = () => {
-    // Set showMessage to true when the button is clicked
     setShowMessage(true);
 
-    // Hide the message after 3 seconds
     setTimeout(() => {
       setShowMessage(false);
     }, 500);
@@ -69,28 +61,12 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
             <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'> BookNow</button>
              </Link>
           </div>
-          {/* Display the message when showMessage is true */}
       {showMessage &&  <p className='text-black text-2xl font-semibold'>  Item Added to Cart</p>}
         </div>
       </div>
-      </div>
-
-      
-     
-      <br />
-      {/* <CartPage cartItems={cartItems} />
-<br />
-<Link to="/cart">View Cart</Link> */}
+      </div> <br />
       <div >
-       
-
-
-
-
-
-
-
-        <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
+         <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
           <h5 className='font-bold '>Specification of {Car}</h5>
           <section class="table__body">
             <table>
@@ -110,9 +86,6 @@ export default function Props({ imagesArray, brand, Features, Car, Price, About,
             </table>
           </section>
         </div>
-
-
-
         <div className='border border-gray-300 hover:border-gray-900 shadow-black transition duration-300 ease-in-out shadow-xl p-5 m-4'>
           <h1 className='font-bold'>Features of {Car}</h1>
           <section class="table__body">
