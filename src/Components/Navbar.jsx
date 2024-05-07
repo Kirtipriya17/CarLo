@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <h1 className="ml-2 text-white text-4xl font-bold hover:text-gray-700 transition duration-300 ease-in-out">
-              CarLo
+            <Link to={"/"}>CarLo </Link>
             </h1>
           </div>
           <div className="md:hidden">
@@ -108,7 +108,7 @@ const Navbar = () => {
               <Search />
             </div>
 
-            <Link to={"/Cart"}>
+            <Link to={"/"}>
               <button className="text-white focus:outline-none ">
                 <HiShoppingCart className="h-7  w-8 fill-current" />
               </button>
